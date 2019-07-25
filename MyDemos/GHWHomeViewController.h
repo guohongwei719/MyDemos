@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GHWViewController.h
 //  MyDemos
 //
 //  Created by 郭宏伟 on 2019/7/25.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface GHWHomeViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
