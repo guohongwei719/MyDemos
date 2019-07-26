@@ -24,7 +24,10 @@
 }
 
 - (void)configData {
-    self.dataArray = @[@"测试", @"测试2"];
+    self.dataArray = @[@"单车", @"助力车", @"电动车", @"顺风车", @"打车", @"换电"];
+    
+    [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
+    [self becomeFirstResponder];
 }
 
 - (void)configView {
@@ -59,6 +62,42 @@
     
 }
 
+#pragma mark - ShakeToEdit 摇动手机之后的回调方法
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    //检测到摇动开始
+    if (motion == UIEventSubtypeMotionShake) {
+        // your code
+        NSLog(@"检测到摇动开始");
+        [self showMenu];
+    }
+}
+
+- (void)showMenu {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *exportAction = [UIAlertAction actionWithTitle:@"导出当前UI结构" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_Export" object:nil];
+    }];
+    UIAlertAction *seeElementAction = [UIAlertAction actionWithTitle:@"审查元素" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_2D" object:nil];
+    }];
+    UIAlertAction *threeDAction = [UIAlertAction actionWithTitle:@"3D 视图" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_3D" object:nil];
+    }];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        
+    }];
+    
+    [alertController addAction:exportAction];
+    [alertController addAction:seeElementAction];
+    [alertController addAction:threeDAction];
+    [alertController addAction:cancelAction];
+
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+#pragma mark - getter & setter
 
 - (UITableView *)mainTableView {
     if (!_mainTableView) {
@@ -77,6 +116,7 @@
     }
     return _mainTableView;
 }
+
 
 
 @end

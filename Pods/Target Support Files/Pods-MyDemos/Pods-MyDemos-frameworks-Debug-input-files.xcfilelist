@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${PODS_ROOT}/LookinServer/LookinServer.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
