@@ -16,6 +16,9 @@
 		ED71924E22E9A89C00B1A74E /* UIDevice+JY.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71924C22E9A89B00B1A74E /* UIDevice+JY.m */; };
 		ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */ = {isa = PBXBuildFile; fileRef = ED71925022E9AA6D00B1A74E /* MyDemos.pch */; };
 		ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */; };
+		EDD5446F23029EA000092443 /* RAMExport.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5446E23029EA000092443 /* RAMExport.m */; };
+		EDD5447223029EF400092443 /* GHWModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447123029EF400092443 /* GHWModuleA.m */; };
+		EDD5447523029F2300092443 /* GHWModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447423029F2300092443 /* GHWModuleB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,12 @@
 		ED71925022E9AA6D00B1A74E /* MyDemos.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDemos.pch; sourceTree = "<group>"; };
 		ED71925222E9AE3400B1A74E /* GHWHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWHomeTableViewCell.h; sourceTree = "<group>"; };
 		ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWHomeTableViewCell.m; sourceTree = "<group>"; };
+		EDD5446D23029EA000092443 /* RAMExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAMExport.h; sourceTree = "<group>"; };
+		EDD5446E23029EA000092443 /* RAMExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAMExport.m; sourceTree = "<group>"; };
+		EDD5447023029EF400092443 /* GHWModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleA.h; sourceTree = "<group>"; };
+		EDD5447123029EF400092443 /* GHWModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleA.m; sourceTree = "<group>"; };
+		EDD5447323029F2300092443 /* GHWModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleB.h; sourceTree = "<group>"; };
+		EDD5447423029F2300092443 /* GHWModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +97,7 @@
 		ED71923122E999AA00B1A74E /* MyDemos */ = {
 			isa = PBXGroup;
 			children = (
+				EDD5446C23029E6200092443 /* launchManager */,
 				ED71924B22E9A82000B1A74E /* Base */,
 				ED71923222E999AA00B1A74E /* AppDelegate.h */,
 				ED71923322E999AA00B1A74E /* AppDelegate.m */,
@@ -111,6 +121,19 @@
 				ED71924C22E9A89B00B1A74E /* UIDevice+JY.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EDD5446C23029E6200092443 /* launchManager */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5446D23029EA000092443 /* RAMExport.h */,
+				EDD5446E23029EA000092443 /* RAMExport.m */,
+				EDD5447023029EF400092443 /* GHWModuleA.h */,
+				EDD5447123029EF400092443 /* GHWModuleA.m */,
+				EDD5447323029F2300092443 /* GHWModuleB.h */,
+				EDD5447423029F2300092443 /* GHWModuleB.m */,
+			);
+			path = launchManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +251,10 @@
 			files = (
 				ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */,
 				ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */,
+				EDD5447523029F2300092443 /* GHWModuleB.m in Sources */,
+				EDD5446F23029EA000092443 /* RAMExport.m in Sources */,
 				ED71924E22E9A89C00B1A74E /* UIDevice+JY.m in Sources */,
+				EDD5447223029EF400092443 /* GHWModuleA.m in Sources */,
 				ED71924A22E9A05E00B1A74E /* GHWHomeViewController.m in Sources */,
 				ED71924222E999AC00B1A74E /* main.m in Sources */,
 				ED71923422E999AA00B1A74E /* AppDelegate.m in Sources */,
@@ -390,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemos/MyDemos.pch";
 				INFOPLIST_FILE = MyDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

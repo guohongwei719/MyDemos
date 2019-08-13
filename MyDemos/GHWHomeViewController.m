@@ -23,12 +23,23 @@
     [self configView];
 }
 
+- (void)testUnUsedMethod {
+    NSLog(@"testUnUsedMethod");
+}
+
+__attribute__((constructor))
+void premain() {
+    [RAMExport.sharedInstance executeArrayForKey:@"pre_main"];
+}
+
 - (void)configData {
     self.dataArray = @[@"单车", @"助力车", @"电动车", @"顺风车", @"打车", @"换电"];
     
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
 }
+
+
 
 - (void)configView {
     self.title = @"demos";
