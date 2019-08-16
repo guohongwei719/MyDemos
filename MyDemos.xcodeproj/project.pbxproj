@@ -16,9 +16,22 @@
 		ED71924E22E9A89C00B1A74E /* UIDevice+JY.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71924C22E9A89B00B1A74E /* UIDevice+JY.m */; };
 		ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */ = {isa = PBXBuildFile; fileRef = ED71925022E9AA6D00B1A74E /* MyDemos.pch */; };
 		ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */; };
+		EDA1CAC023052EE9003C47BB /* GHWTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CABF23052EE9003C47BB /* GHWTouchViewController.m */; };
+		EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAC223052F25003C47BB /* GHWEventAView.m */; };
+		EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAC523052F3F003C47BB /* GHWEventBView.m */; };
+		EDA1CAC923052F4B003C47BB /* GHWEventCView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAC823052F4B003C47BB /* GHWEventCView.m */; };
+		EDA1CACC23052F5B003C47BB /* GHWEventDView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CACB23052F5B003C47BB /* GHWEventDView.m */; };
+		EDA1CACF23052F72003C47BB /* GHWEventEView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CACE23052F72003C47BB /* GHWEventEView.m */; };
+		EDA1CAD223053B42003C47BB /* GHWTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD123053B42003C47BB /* GHWTapGestureRecognizer.m */; };
+		EDA1CAD523066BE1003C47BB /* GHWEventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD423066BE1003C47BB /* GHWEventButton.m */; };
+		EDA1CAD723067BDB003C47BB /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EDA1CAD623067BDB003C47BB /* Readme.md */; };
 		EDD5446F23029EA000092443 /* RAMExport.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5446E23029EA000092443 /* RAMExport.m */; };
 		EDD5447223029EF400092443 /* GHWModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447123029EF400092443 /* GHWModuleA.m */; };
 		EDD5447523029F2300092443 /* GHWModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447423029F2300092443 /* GHWModuleB.m */; };
+		EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544782303ECFB00092443 /* GHWAttributeViewController.m */; };
+		EDD5447C2303EE3700092443 /* GHWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447B2303EE3700092443 /* GHWBaseViewController.m */; };
+		EDD5447F2303F14900092443 /* GHWAttributeTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447E2303F14900092443 /* GHWAttributeTestObject.m */; };
+		EDD544822303F75F00092443 /* GHWAttributeBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544812303F75F00092443 /* GHWAttributeBaseObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,12 +52,37 @@
 		ED71925022E9AA6D00B1A74E /* MyDemos.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDemos.pch; sourceTree = "<group>"; };
 		ED71925222E9AE3400B1A74E /* GHWHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWHomeTableViewCell.h; sourceTree = "<group>"; };
 		ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWHomeTableViewCell.m; sourceTree = "<group>"; };
+		EDA1CABE23052EE9003C47BB /* GHWTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWTouchViewController.h; sourceTree = "<group>"; };
+		EDA1CABF23052EE9003C47BB /* GHWTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWTouchViewController.m; sourceTree = "<group>"; };
+		EDA1CAC123052F25003C47BB /* GHWEventAView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventAView.h; sourceTree = "<group>"; };
+		EDA1CAC223052F25003C47BB /* GHWEventAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventAView.m; sourceTree = "<group>"; };
+		EDA1CAC423052F3F003C47BB /* GHWEventBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventBView.h; sourceTree = "<group>"; };
+		EDA1CAC523052F3F003C47BB /* GHWEventBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventBView.m; sourceTree = "<group>"; };
+		EDA1CAC723052F4B003C47BB /* GHWEventCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventCView.h; sourceTree = "<group>"; };
+		EDA1CAC823052F4B003C47BB /* GHWEventCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventCView.m; sourceTree = "<group>"; };
+		EDA1CACA23052F5B003C47BB /* GHWEventDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventDView.h; sourceTree = "<group>"; };
+		EDA1CACB23052F5B003C47BB /* GHWEventDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventDView.m; sourceTree = "<group>"; };
+		EDA1CACD23052F72003C47BB /* GHWEventEView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventEView.h; sourceTree = "<group>"; };
+		EDA1CACE23052F72003C47BB /* GHWEventEView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventEView.m; sourceTree = "<group>"; };
+		EDA1CAD023053B42003C47BB /* GHWTapGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWTapGestureRecognizer.h; sourceTree = "<group>"; };
+		EDA1CAD123053B42003C47BB /* GHWTapGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWTapGestureRecognizer.m; sourceTree = "<group>"; };
+		EDA1CAD323066BE1003C47BB /* GHWEventButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventButton.h; sourceTree = "<group>"; };
+		EDA1CAD423066BE1003C47BB /* GHWEventButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventButton.m; sourceTree = "<group>"; };
+		EDA1CAD623067BDB003C47BB /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		EDD5446D23029EA000092443 /* RAMExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAMExport.h; sourceTree = "<group>"; };
 		EDD5446E23029EA000092443 /* RAMExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAMExport.m; sourceTree = "<group>"; };
 		EDD5447023029EF400092443 /* GHWModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleA.h; sourceTree = "<group>"; };
 		EDD5447123029EF400092443 /* GHWModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleA.m; sourceTree = "<group>"; };
 		EDD5447323029F2300092443 /* GHWModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleB.h; sourceTree = "<group>"; };
 		EDD5447423029F2300092443 /* GHWModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleB.m; sourceTree = "<group>"; };
+		EDD544772303ECFB00092443 /* GHWAttributeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWAttributeViewController.h; sourceTree = "<group>"; };
+		EDD544782303ECFB00092443 /* GHWAttributeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWAttributeViewController.m; sourceTree = "<group>"; };
+		EDD5447A2303EE3700092443 /* GHWBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWBaseViewController.h; sourceTree = "<group>"; };
+		EDD5447B2303EE3700092443 /* GHWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWBaseViewController.m; sourceTree = "<group>"; };
+		EDD5447D2303F14900092443 /* GHWAttributeTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWAttributeTestObject.h; sourceTree = "<group>"; };
+		EDD5447E2303F14900092443 /* GHWAttributeTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWAttributeTestObject.m; sourceTree = "<group>"; };
+		EDD544802303F75F00092443 /* GHWAttributeBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWAttributeBaseObject.h; sourceTree = "<group>"; };
+		EDD544812303F75F00092443 /* GHWAttributeBaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWAttributeBaseObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +135,7 @@
 		ED71923122E999AA00B1A74E /* MyDemos */ = {
 			isa = PBXGroup;
 			children = (
+				EDA1CABD23052E8A003C47BB /* TouchEvent */,
 				EDD5446C23029E6200092443 /* launchManager */,
 				ED71924B22E9A82000B1A74E /* Base */,
 				ED71923222E999AA00B1A74E /* AppDelegate.h */,
@@ -119,8 +158,34 @@
 			children = (
 				ED71924D22E9A89C00B1A74E /* UIDevice+JY.h */,
 				ED71924C22E9A89B00B1A74E /* UIDevice+JY.m */,
+				EDD5447A2303EE3700092443 /* GHWBaseViewController.h */,
+				EDD5447B2303EE3700092443 /* GHWBaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EDA1CABD23052E8A003C47BB /* TouchEvent */ = {
+			isa = PBXGroup;
+			children = (
+				EDA1CAD623067BDB003C47BB /* Readme.md */,
+				EDA1CABE23052EE9003C47BB /* GHWTouchViewController.h */,
+				EDA1CABF23052EE9003C47BB /* GHWTouchViewController.m */,
+				EDA1CAC123052F25003C47BB /* GHWEventAView.h */,
+				EDA1CAC223052F25003C47BB /* GHWEventAView.m */,
+				EDA1CAC423052F3F003C47BB /* GHWEventBView.h */,
+				EDA1CAC523052F3F003C47BB /* GHWEventBView.m */,
+				EDA1CAC723052F4B003C47BB /* GHWEventCView.h */,
+				EDA1CAC823052F4B003C47BB /* GHWEventCView.m */,
+				EDA1CACA23052F5B003C47BB /* GHWEventDView.h */,
+				EDA1CACB23052F5B003C47BB /* GHWEventDView.m */,
+				EDA1CACD23052F72003C47BB /* GHWEventEView.h */,
+				EDA1CACE23052F72003C47BB /* GHWEventEView.m */,
+				EDA1CAD023053B42003C47BB /* GHWTapGestureRecognizer.h */,
+				EDA1CAD123053B42003C47BB /* GHWTapGestureRecognizer.m */,
+				EDA1CAD323066BE1003C47BB /* GHWEventButton.h */,
+				EDA1CAD423066BE1003C47BB /* GHWEventButton.m */,
+			);
+			path = TouchEvent;
 			sourceTree = "<group>";
 		};
 		EDD5446C23029E6200092443 /* launchManager */ = {
@@ -132,6 +197,12 @@
 				EDD5447123029EF400092443 /* GHWModuleA.m */,
 				EDD5447323029F2300092443 /* GHWModuleB.h */,
 				EDD5447423029F2300092443 /* GHWModuleB.m */,
+				EDD544772303ECFB00092443 /* GHWAttributeViewController.h */,
+				EDD544782303ECFB00092443 /* GHWAttributeViewController.m */,
+				EDD5447D2303F14900092443 /* GHWAttributeTestObject.h */,
+				EDD5447E2303F14900092443 /* GHWAttributeTestObject.m */,
+				EDD544802303F75F00092443 /* GHWAttributeBaseObject.h */,
+				EDD544812303F75F00092443 /* GHWAttributeBaseObject.m */,
 			);
 			path = launchManager;
 			sourceTree = "<group>";
@@ -197,6 +268,7 @@
 			files = (
 				ED71923F22E999AC00B1A74E /* LaunchScreen.storyboard in Resources */,
 				ED71923C22E999AC00B1A74E /* Assets.xcassets in Resources */,
+				EDA1CAD723067BDB003C47BB /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +327,21 @@
 				EDD5446F23029EA000092443 /* RAMExport.m in Sources */,
 				ED71924E22E9A89C00B1A74E /* UIDevice+JY.m in Sources */,
 				EDD5447223029EF400092443 /* GHWModuleA.m in Sources */,
+				EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */,
+				EDD544822303F75F00092443 /* GHWAttributeBaseObject.m in Sources */,
+				EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */,
 				ED71924A22E9A05E00B1A74E /* GHWHomeViewController.m in Sources */,
+				EDA1CAD223053B42003C47BB /* GHWTapGestureRecognizer.m in Sources */,
+				EDA1CAC023052EE9003C47BB /* GHWTouchViewController.m in Sources */,
+				EDD5447F2303F14900092443 /* GHWAttributeTestObject.m in Sources */,
+				EDA1CACF23052F72003C47BB /* GHWEventEView.m in Sources */,
 				ED71924222E999AC00B1A74E /* main.m in Sources */,
+				EDD5447C2303EE3700092443 /* GHWBaseViewController.m in Sources */,
 				ED71923422E999AA00B1A74E /* AppDelegate.m in Sources */,
+				EDA1CAD523066BE1003C47BB /* GHWEventButton.m in Sources */,
+				EDA1CAC923052F4B003C47BB /* GHWEventCView.m in Sources */,
+				EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */,
+				EDA1CACC23052F5B003C47BB /* GHWEventDView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +483,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemos/MyDemos.pch";
 				INFOPLIST_FILE = MyDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_GENERATE_MAP_FILE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,6 +504,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemos/MyDemos.pch";
 				INFOPLIST_FILE = MyDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_GENERATE_MAP_FILE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

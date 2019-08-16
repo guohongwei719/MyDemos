@@ -7,8 +7,15 @@
 //
 
 #import "GHWHomeViewController.h"
+
 #import "GHWHomeTableViewCell.h"
 #import <Masonry/Masonry.h>
+
+#import "GHWBaseViewController.h"
+#import "GHWAttributeViewController.h"
+#import "GHWTouchViewController.h"
+
+
 @interface GHWHomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *mainTableView;
@@ -33,7 +40,7 @@ void premain() {
 }
 
 - (void)configData {
-    self.dataArray = @[@"单车", @"助力车", @"电动车", @"顺风车", @"打车", @"换电"];
+    self.dataArray = @[@"__attribute__", @"响应事件机制"];
     
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
@@ -59,7 +66,7 @@ void premain() {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     GHWHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GHWHomeTableViewCell"];
-    cell.labelTitle.text = self.dataArray[indexPath.row];
+    cell.labelTitle.text = [NSString stringWithFormat:@"%@. %@", @(indexPath.row + 1), self.dataArray[indexPath.row]];
     return cell;
 }
 
@@ -70,7 +77,14 @@ void premain() {
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    GHWBaseViewController *vc;
+    if (indexPath.row == 0) {
+        vc = [[GHWAttributeViewController alloc] init];
+    } else if (indexPath.row == 1) {
+        vc = [[GHWTouchViewController alloc] init];
+    }
+    vc.titleStr = [self.dataArray objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - ShakeToEdit 摇动手机之后的回调方法
