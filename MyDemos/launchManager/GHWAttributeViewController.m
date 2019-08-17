@@ -8,6 +8,7 @@
 
 #import "GHWAttributeViewController.h"
 #import "GHWAttributeTestObject.h"
+//#import "RAMExport.h"
 
 @interface GHWAttributeViewController ()
 
@@ -34,6 +35,11 @@
 
 void printTestString(NSString **string){
     NSLog(@" 打印信息string:%@",*string);
+}
+
+__attribute__((constructor))
+void premain() {
+    [[RAMExport sharedInstance] executeArrayForKey:@"pre_main"];
 }
 
 

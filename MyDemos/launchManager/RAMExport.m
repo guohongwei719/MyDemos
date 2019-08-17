@@ -16,8 +16,6 @@
 
 #import "RAMExport.h"
 
-#if DEBUG
-
 #import <dlfcn.h>
 #import <objc/runtime.h>
 
@@ -232,5 +230,3 @@ void RAMExecuteBlock(char *key) {
     return RAMHasSection("__RAM", (char *)[section UTF8String]);
 }
 @end
-
-#endif

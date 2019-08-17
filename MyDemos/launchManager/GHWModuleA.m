@@ -10,7 +10,6 @@
 
 @implementation GHWModuleA
 
-
 RAM_FUNCTION_EXPORT(pre_main)() {
     printf("ModuleA:pre_main");
 }

@@ -34,10 +34,6 @@
     NSLog(@"testUnUsedMethod");
 }
 
-__attribute__((constructor))
-void premain() {
-    [RAMExport.sharedInstance executeArrayForKey:@"pre_main"];
-}
 
 - (void)configData {
     self.dataArray = @[@"__attribute__", @"响应事件机制"];

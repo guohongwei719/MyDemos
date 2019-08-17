@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [RAMExport.sharedInstance executeArrayForKey:@"stage_A"];
+    [[RAMExport sharedInstance] executeArrayForKey:@"stage_A"];
     return YES;
 }
 

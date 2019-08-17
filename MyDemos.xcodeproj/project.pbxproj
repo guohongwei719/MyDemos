@@ -25,7 +25,7 @@
 		EDA1CAD223053B42003C47BB /* GHWTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD123053B42003C47BB /* GHWTapGestureRecognizer.m */; };
 		EDA1CAD523066BE1003C47BB /* GHWEventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD423066BE1003C47BB /* GHWEventButton.m */; };
 		EDA1CAD723067BDB003C47BB /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EDA1CAD623067BDB003C47BB /* Readme.md */; };
-		EDD5446F23029EA000092443 /* RAMExport.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5446E23029EA000092443 /* RAMExport.m */; };
+		EDA1CADA2306DADD003C47BB /* RAMExport.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD92306DADD003C47BB /* RAMExport.m */; };
 		EDD5447223029EF400092443 /* GHWModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447123029EF400092443 /* GHWModuleA.m */; };
 		EDD5447523029F2300092443 /* GHWModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447423029F2300092443 /* GHWModuleB.m */; };
 		EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544782303ECFB00092443 /* GHWAttributeViewController.m */; };
@@ -69,8 +69,8 @@
 		EDA1CAD323066BE1003C47BB /* GHWEventButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventButton.h; sourceTree = "<group>"; };
 		EDA1CAD423066BE1003C47BB /* GHWEventButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventButton.m; sourceTree = "<group>"; };
 		EDA1CAD623067BDB003C47BB /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		EDD5446D23029EA000092443 /* RAMExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAMExport.h; sourceTree = "<group>"; };
-		EDD5446E23029EA000092443 /* RAMExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAMExport.m; sourceTree = "<group>"; };
+		EDA1CAD82306DADD003C47BB /* RAMExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAMExport.h; sourceTree = "<group>"; };
+		EDA1CAD92306DADD003C47BB /* RAMExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAMExport.m; sourceTree = "<group>"; };
 		EDD5447023029EF400092443 /* GHWModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleA.h; sourceTree = "<group>"; };
 		EDD5447123029EF400092443 /* GHWModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleA.m; sourceTree = "<group>"; };
 		EDD5447323029F2300092443 /* GHWModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleB.h; sourceTree = "<group>"; };
@@ -191,8 +191,8 @@
 		EDD5446C23029E6200092443 /* launchManager */ = {
 			isa = PBXGroup;
 			children = (
-				EDD5446D23029EA000092443 /* RAMExport.h */,
-				EDD5446E23029EA000092443 /* RAMExport.m */,
+				EDA1CAD82306DADD003C47BB /* RAMExport.h */,
+				EDA1CAD92306DADD003C47BB /* RAMExport.m */,
 				EDD5447023029EF400092443 /* GHWModuleA.h */,
 				EDD5447123029EF400092443 /* GHWModuleA.m */,
 				EDD5447323029F2300092443 /* GHWModuleB.h */,
@@ -323,8 +323,8 @@
 			files = (
 				ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */,
 				ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */,
+				EDA1CADA2306DADD003C47BB /* RAMExport.m in Sources */,
 				EDD5447523029F2300092443 /* GHWModuleB.m in Sources */,
-				EDD5446F23029EA000092443 /* RAMExport.m in Sources */,
 				ED71924E22E9A89C00B1A74E /* UIDevice+JY.m in Sources */,
 				EDD5447223029EF400092443 /* GHWModuleA.m in Sources */,
 				EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */,
@@ -509,6 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jingyao.MyDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
