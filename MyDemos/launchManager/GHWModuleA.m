@@ -10,17 +10,16 @@
 
 @implementation GHWModuleA
 
-RAM_FUNCTION_EXPORT(pre_main)() {
+GHW_FUNCTION_EXPORT(pre_main)() {
     printf("ModuleA:pre_main");
 }
 
-RAM_FUNCTION_EXPORT(stage_A)() {
+GHW_FUNCTION_EXPORT(stage_A)() {
     printf("ModuleA:stage_A");
 }
 
-RAM_FUNCTION_EXPORT(stage_B)() {
+GHW_FUNCTION_EXPORT(stage_B)() {
     printf("ModuleA:stage_B");
 }
-
 
 @end

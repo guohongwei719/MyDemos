@@ -39,7 +39,7 @@ void printTestString(NSString **string){
 
 __attribute__((constructor))
 void premain() {
-    [[RAMExport sharedInstance] executeArrayForKey:@"pre_main"];
+    [[GHWExport sharedInstance] executeArrayForKey:@"pre_main"];
 }
 
 

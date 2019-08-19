@@ -1,17 +1,17 @@
 //
-//  UIDevice+JY.m
+//  UIDevice+GHW.m
 //  EasyBike
 //
 //  Created by ZK on 2017/9/22.
 //  Copyright © 2017年 jingyao. All rights reserved.
 //
 
-#import "UIDevice+JY.h"
+#import "UIDevice+GHW.h"
 #import <ifaddrs.h>
 #import <net/if.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 
-@implementation UIDevice (JY)
+@implementation UIDevice (GHW)
 
 + (BOOL)is4 {
     if ([UIScreen mainScreen].bounds.size.height == 480) {

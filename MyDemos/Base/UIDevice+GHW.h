@@ -1,5 +1,5 @@
 //
-//  UIDevice+JY.h
+//  UIDevice+GHW.h
 //  EasyBike
 //
 //  Created by ZK on 2017/9/22.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIDevice (JY)
+@interface UIDevice (GHW)
 
 + (BOOL)is4;
 

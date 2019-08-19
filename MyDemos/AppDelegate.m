@@ -17,12 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[RAMExport sharedInstance] executeArrayForKey:@"stage_A"];
+    [[GHWExport sharedInstance] executeArrayForKey:@"stage_A"];
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [RAMExport.sharedInstance executeArrayForKey:@"stage_B"];
+    [GHWExport.sharedInstance executeArrayForKey:@"stage_B"];
 
     GHWHomeViewController *vc = [[GHWHomeViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
