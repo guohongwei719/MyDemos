@@ -14,12 +14,19 @@ GHW_FUNCTION_EXPORT(pre_main)() {
     printf("ModuleA:pre_main");
 }
 
-GHW_FUNCTION_EXPORT(stage_A)() {
-    printf("ModuleA:stage_A");
+//GHW_FUNCTION_EXPORT(Stage_A)() {
+//    printf("ModuleA:Stage_A");
+//}
+
+static void _GHWStage_A(void); \
+__attribute__((used, section("__GHW,__Stage_A"))) \
+static const struct GHW_Function __FStage_A = (struct GHW_Function){(char *)(&("Stage_A")), (void *)(&_GHWStage_A)}; \
+static void _GHWStage_A () {
+    printf("ModuleA:Stage_A");
 }
 
-GHW_FUNCTION_EXPORT(stage_B)() {
-    printf("ModuleA:stage_B");
+GHW_FUNCTION_EXPORT(Stage_B)() {
+    printf("ModuleA:Stage_B");
 }
 
 @end

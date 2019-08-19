@@ -19,7 +19,6 @@ typedef struct section GHWExportSection;
 
 #pragma mark -
 
-
 void GHWExecuteFunction(char *key) {
     Dl_info info;
     dladdr((const void *)&GHWExecuteFunction, &info);
@@ -62,7 +61,7 @@ void GHWExecuteFunction(char *key) {
 }
 
 - (void)executeArrayForKey:(NSString *)key {
-    NSString *fKey = [NSString stringWithFormat:@"__%@.func", key?:@""];
+    NSString *fKey = [NSString stringWithFormat:@"__%@", key?:@""];
     GHWExecuteFunction((char *)[fKey UTF8String]);
 }
 
