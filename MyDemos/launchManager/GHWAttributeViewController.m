@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor redColor];
     GHWAttributeTestObject *testObj = [[GHWAttributeTestObject alloc] init];
 //    [testObj testMethod1];
 //    [testObj testMethod2];
@@ -31,6 +31,7 @@
     testCleanUp = @"1";
     
     NSLog(@"testObj class: %@",NSStringFromClass([testObj class]));
+    
 }
 
 void printTestString(NSString **string){

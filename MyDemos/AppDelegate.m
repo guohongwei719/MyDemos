@@ -18,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[GHWExport sharedInstance] executeArrayForKey:@"Stage_A"];
+
+//
+#if DEBUG
+    [[NSBundle bundleWithPath:@"/Users/guohongwei719/Library/Developer/Xcode/DerivedData/InjectionIII-fvgzelftiqykfxebnrehvynhccwz/Build/Products/Debug/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+#endif
     return YES;
 }
 
