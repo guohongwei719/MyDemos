@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55628ADA61EC9912A559C597 /* Pods_MyDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4EF4AA7F75CBCB373E1812 /* Pods_MyDemos.framework */; };
+		ED33BB5F230BF3DA00C91DEC /* GHWBitToSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */; };
 		ED43F96A2308F4DA0044DA50 /* UIDevice+GHW.m in Sources */ = {isa = PBXBuildFile; fileRef = ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */; };
 		ED71923422E999AA00B1A74E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71923322E999AA00B1A74E /* AppDelegate.m */; };
 		ED71923C22E999AC00B1A74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED71923B22E999AC00B1A74E /* Assets.xcassets */; };
@@ -38,6 +39,8 @@
 		2B4EF4AA7F75CBCB373E1812 /* Pods_MyDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0530AB7F161664F95F55C2 /* Pods-MyDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.debug.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		D12A5835269FCDF23020B4A1 /* Pods-MyDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.release.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.release.xcconfig"; sourceTree = "<group>"; };
+		ED33BB5D230BF3DA00C91DEC /* GHWBitToSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWBitToSourceViewController.h; sourceTree = "<group>"; };
+		ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWBitToSourceViewController.m; sourceTree = "<group>"; };
 		ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+GHW.m"; sourceTree = "<group>"; };
 		ED43F9692308F4DA0044DA50 /* UIDevice+GHW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+GHW.h"; sourceTree = "<group>"; };
 		ED71922F22E999AA00B1A74E /* MyDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +117,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED33BB5C230BF3B800C91DEC /* bitToSource */ = {
+			isa = PBXGroup;
+			children = (
+				ED33BB5D230BF3DA00C91DEC /* GHWBitToSourceViewController.h */,
+				ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */,
+			);
+			path = bitToSource;
+			sourceTree = "<group>";
+		};
 		ED71922622E999A900B1A74E = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +147,7 @@
 		ED71923122E999AA00B1A74E /* MyDemos */ = {
 			isa = PBXGroup;
 			children = (
+				ED33BB5C230BF3B800C91DEC /* bitToSource */,
 				EDA1CABD23052E8A003C47BB /* TouchEvent */,
 				EDD5446C23029E6200092443 /* launchManager */,
 				ED71924B22E9A82000B1A74E /* Base */,
@@ -332,6 +345,7 @@
 				ED71924A22E9A05E00B1A74E /* GHWHomeViewController.m in Sources */,
 				EDA1CAD223053B42003C47BB /* GHWTapGestureRecognizer.m in Sources */,
 				EDA1CAC023052EE9003C47BB /* GHWTouchViewController.m in Sources */,
+				ED33BB5F230BF3DA00C91DEC /* GHWBitToSourceViewController.m in Sources */,
 				EDD5447F2303F14900092443 /* GHWAttributeTestObject.m in Sources */,
 				ED43F96A2308F4DA0044DA50 /* UIDevice+GHW.m in Sources */,
 				EDA1CACF23052F72003C47BB /* GHWEventEView.m in Sources */,
@@ -480,6 +494,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyDemos/bitToSource",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemos/MyDemos.pch";
 				INFOPLIST_FILE = MyDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -501,6 +520,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HMG43AYW9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyDemos/bitToSource",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemos/MyDemos.pch";
 				INFOPLIST_FILE = MyDemos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

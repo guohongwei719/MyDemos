@@ -14,7 +14,7 @@
 #import "GHWBaseViewController.h"
 #import "GHWAttributeViewController.h"
 #import "GHWTouchViewController.h"
-
+#import "GHWBitToSourceViewController.h"
 
 @interface GHWHomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -36,7 +36,7 @@
 
 
 - (void)configData {
-    self.dataArray = @[@"__attribute__", @"响应事件机制"];
+    self.dataArray = @[@"__attribute__", @"响应事件机制", @"二进制源码映射"];
     
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
@@ -78,6 +78,8 @@
         vc = [[GHWAttributeViewController alloc] init];
     } else if (indexPath.row == 1) {
         vc = [[GHWTouchViewController alloc] init];
+    } else if (indexPath.row == 2) {
+        vc = [GHWBitToSourceViewController new];
     }
     vc.titleStr = [self.dataArray objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
