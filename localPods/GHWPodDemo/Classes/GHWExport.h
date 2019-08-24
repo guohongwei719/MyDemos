@@ -19,6 +19,7 @@ static void _GHW##key \
 
 /// 执行注册为key的function
 - (void)executeArrayForKey:(NSString *)key;
-
+- (void)testFail;
+- (void)testSuccess;
 @end
 

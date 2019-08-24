@@ -65,4 +65,13 @@ void GHWExecuteFunction(char *key) {
     GHWExecuteFunction((char *)[fKey UTF8String]);
 }
 
+- (void)testFail {
+    NSArray *array = @[@"1"];
+    NSLog(@"test = %@", array[2]);
+}
+
+- (void)testSuccess {
+    NSLog(@"success");
+}
+
 @end
