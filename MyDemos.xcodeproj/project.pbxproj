@@ -17,6 +17,7 @@
 		ED71924A22E9A05E00B1A74E /* GHWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71924922E9A05E00B1A74E /* GHWHomeViewController.m */; };
 		ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */ = {isa = PBXBuildFile; fileRef = ED71925022E9AA6D00B1A74E /* MyDemos.pch */; };
 		ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */; };
+		ED9F5CD623116C0C00C4CFC5 /* LLDB_MapFile.py in Resources */ = {isa = PBXBuildFile; fileRef = ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */; };
 		EDA1CAC023052EE9003C47BB /* GHWTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CABF23052EE9003C47BB /* GHWTouchViewController.m */; };
 		EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAC223052F25003C47BB /* GHWEventAView.m */; };
 		EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAC523052F3F003C47BB /* GHWEventBView.m */; };
@@ -27,6 +28,7 @@
 		EDA1CAD523066BE1003C47BB /* GHWEventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD423066BE1003C47BB /* GHWEventButton.m */; };
 		EDA1CAD723067BDB003C47BB /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EDA1CAD623067BDB003C47BB /* Readme.md */; };
 		EDCAC34A2310D6BB007F9FA8 /* GHWLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */; };
+		EDCAC34D231101E2007F9FA8 /* GHWLLDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC34C231101E2007F9FA8 /* GHWLLDBObject.m */; };
 		EDD5447223029EF400092443 /* GHWModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447123029EF400092443 /* GHWModuleA.m */; };
 		EDD5447523029F2300092443 /* GHWModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447423029F2300092443 /* GHWModuleB.m */; };
 		EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544782303ECFB00092443 /* GHWAttributeViewController.m */; };
@@ -55,6 +57,7 @@
 		ED71925022E9AA6D00B1A74E /* MyDemos.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDemos.pch; sourceTree = "<group>"; };
 		ED71925222E9AE3400B1A74E /* GHWHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWHomeTableViewCell.h; sourceTree = "<group>"; };
 		ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWHomeTableViewCell.m; sourceTree = "<group>"; };
+		ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = LLDB_MapFile.py; path = script/LLDB_MapFile.py; sourceTree = SOURCE_ROOT; };
 		EDA1CABE23052EE9003C47BB /* GHWTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWTouchViewController.h; sourceTree = "<group>"; };
 		EDA1CABF23052EE9003C47BB /* GHWTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWTouchViewController.m; sourceTree = "<group>"; };
 		EDA1CAC123052F25003C47BB /* GHWEventAView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventAView.h; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 		EDA1CAD623067BDB003C47BB /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		EDCAC3482310D6BB007F9FA8 /* GHWLLDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWLLDBViewController.h; sourceTree = "<group>"; };
 		EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWLLDBViewController.m; sourceTree = "<group>"; };
+		EDCAC34B231101E2007F9FA8 /* GHWLLDBObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWLLDBObject.h; sourceTree = "<group>"; };
+		EDCAC34C231101E2007F9FA8 /* GHWLLDBObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWLLDBObject.m; sourceTree = "<group>"; };
 		EDD5447023029EF400092443 /* GHWModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleA.h; sourceTree = "<group>"; };
 		EDD5447123029EF400092443 /* GHWModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleA.m; sourceTree = "<group>"; };
 		EDD5447323029F2300092443 /* GHWModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleB.h; sourceTree = "<group>"; };
@@ -205,8 +210,11 @@
 		EDCAC3472310D5A1007F9FA8 /* lldb */ = {
 			isa = PBXGroup;
 			children = (
+				ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */,
 				EDCAC3482310D6BB007F9FA8 /* GHWLLDBViewController.h */,
 				EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */,
+				EDCAC34B231101E2007F9FA8 /* GHWLLDBObject.h */,
+				EDCAC34C231101E2007F9FA8 /* GHWLLDBObject.m */,
 			);
 			path = lldb;
 			sourceTree = "<group>";
@@ -288,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED71923F22E999AC00B1A74E /* LaunchScreen.storyboard in Resources */,
+				ED9F5CD623116C0C00C4CFC5 /* LLDB_MapFile.py in Resources */,
 				ED71923C22E999AC00B1A74E /* Assets.xcassets in Resources */,
 				EDA1CAD723067BDB003C47BB /* Readme.md in Resources */,
 			);
@@ -345,6 +354,7 @@
 				ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */,
 				ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */,
 				EDD5447523029F2300092443 /* GHWModuleB.m in Sources */,
+				EDCAC34D231101E2007F9FA8 /* GHWLLDBObject.m in Sources */,
 				EDD5447223029EF400092443 /* GHWModuleA.m in Sources */,
 				EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */,
 				EDCAC34A2310D6BB007F9FA8 /* GHWLLDBViewController.m in Sources */,

@@ -7,6 +7,13 @@
 //
 
 #import "GHWLLDBViewController.h"
+#import "GHWLLDBObject.h"
+
+/*
+ lldb命令：
+ image lookup -n 符号
+ 
+ */
 
 @interface GHWLLDBViewController ()
 
@@ -16,8 +23,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blueColor];
-    NSLog(@"ok");
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    
+    GHWLLDBObject *lldbObject = [GHWLLDBObject new];
+    Class cls = NSClassFromString(@"GHWLLDBObject");
+    id obj = [[cls alloc] init];
+    NSLog(@"%@, %@", cls, obj);
 }
 
 

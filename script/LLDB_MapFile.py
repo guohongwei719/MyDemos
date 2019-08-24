@@ -7,7 +7,7 @@ import re
 import os
 
 # command 是用户输入的符号地址
-def sun_map_address(debugger, command, result, internal_dict):
+def mapSource(debugger, command, result, internal_dict):
     print('test')
     print(command)
     print("test")
@@ -50,4 +50,4 @@ def sun_map_address(debugger, command, result, internal_dict):
 # 在 lldb 输入 sun_map_address 0x10803839 时，会执行 lldb_MapFile.py 文件的 sun_map_address 方法
 def __lldb_init_module(debugger, internal_dict):
     # debugger.HandleCommand('command script add -f LLDB_MapFile.sun_map_address sun_map_address')
-    debugger.HandleCommand('command script add sun_map_address -f lldb_MapFile.sun_map_address')
+    debugger.HandleCommand('command script add mapSource -f lldb_MapFile.mapSource')
