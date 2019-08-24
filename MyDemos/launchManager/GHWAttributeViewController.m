@@ -34,6 +34,18 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[GHWExport sharedInstance] executeArrayForKey:@"Stage_A"];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [GHWExport.sharedInstance executeArrayForKey:@"Stage_B"];
+
+}
+
 void printTestString(NSString **string){
     NSLog(@" 打印信息string:%@",*string);
 }

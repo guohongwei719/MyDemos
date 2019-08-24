@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		EDA1CAD223053B42003C47BB /* GHWTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD123053B42003C47BB /* GHWTapGestureRecognizer.m */; };
 		EDA1CAD523066BE1003C47BB /* GHWEventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD423066BE1003C47BB /* GHWEventButton.m */; };
 		EDA1CAD723067BDB003C47BB /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EDA1CAD623067BDB003C47BB /* Readme.md */; };
+		EDCAC34A2310D6BB007F9FA8 /* GHWLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */; };
 		EDD5447223029EF400092443 /* GHWModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447123029EF400092443 /* GHWModuleA.m */; };
 		EDD5447523029F2300092443 /* GHWModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447423029F2300092443 /* GHWModuleB.m */; };
 		EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544782303ECFB00092443 /* GHWAttributeViewController.m */; };
@@ -71,6 +72,8 @@
 		EDA1CAD323066BE1003C47BB /* GHWEventButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventButton.h; sourceTree = "<group>"; };
 		EDA1CAD423066BE1003C47BB /* GHWEventButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventButton.m; sourceTree = "<group>"; };
 		EDA1CAD623067BDB003C47BB /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		EDCAC3482310D6BB007F9FA8 /* GHWLLDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWLLDBViewController.h; sourceTree = "<group>"; };
+		EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWLLDBViewController.m; sourceTree = "<group>"; };
 		EDD5447023029EF400092443 /* GHWModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleA.h; sourceTree = "<group>"; };
 		EDD5447123029EF400092443 /* GHWModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleA.m; sourceTree = "<group>"; };
 		EDD5447323029F2300092443 /* GHWModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleB.h; sourceTree = "<group>"; };
@@ -144,16 +147,13 @@
 		ED71923122E999AA00B1A74E /* MyDemos */ = {
 			isa = PBXGroup;
 			children = (
+				EDCAC3472310D5A1007F9FA8 /* lldb */,
 				ED33BB5C230BF3B800C91DEC /* bitToSource */,
 				EDA1CABD23052E8A003C47BB /* TouchEvent */,
 				EDD5446C23029E6200092443 /* launchManager */,
 				ED71924B22E9A82000B1A74E /* Base */,
 				ED71923222E999AA00B1A74E /* AppDelegate.h */,
 				ED71923322E999AA00B1A74E /* AppDelegate.m */,
-				ED71923B22E999AC00B1A74E /* Assets.xcassets */,
-				ED71923D22E999AC00B1A74E /* LaunchScreen.storyboard */,
-				ED71924022E999AC00B1A74E /* Info.plist */,
-				ED71924122E999AC00B1A74E /* main.m */,
 				ED71924822E9A05E00B1A74E /* GHWHomeViewController.h */,
 				ED71924922E9A05E00B1A74E /* GHWHomeViewController.m */,
 				ED71925022E9AA6D00B1A74E /* MyDemos.pch */,
@@ -166,6 +166,10 @@
 		ED71924B22E9A82000B1A74E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				ED71924122E999AC00B1A74E /* main.m */,
+				ED71924022E999AC00B1A74E /* Info.plist */,
+				ED71923B22E999AC00B1A74E /* Assets.xcassets */,
+				ED71923D22E999AC00B1A74E /* LaunchScreen.storyboard */,
 				ED43F9692308F4DA0044DA50 /* UIDevice+GHW.h */,
 				ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */,
 				EDD5447A2303EE3700092443 /* GHWBaseViewController.h */,
@@ -196,6 +200,15 @@
 				EDA1CAD423066BE1003C47BB /* GHWEventButton.m */,
 			);
 			path = TouchEvent;
+			sourceTree = "<group>";
+		};
+		EDCAC3472310D5A1007F9FA8 /* lldb */ = {
+			isa = PBXGroup;
+			children = (
+				EDCAC3482310D6BB007F9FA8 /* GHWLLDBViewController.h */,
+				EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */,
+			);
+			path = lldb;
 			sourceTree = "<group>";
 		};
 		EDD5446C23029E6200092443 /* launchManager */ = {
@@ -334,6 +347,7 @@
 				EDD5447523029F2300092443 /* GHWModuleB.m in Sources */,
 				EDD5447223029EF400092443 /* GHWModuleA.m in Sources */,
 				EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */,
+				EDCAC34A2310D6BB007F9FA8 /* GHWLLDBViewController.m in Sources */,
 				EDD544822303F75F00092443 /* GHWAttributeBaseObject.m in Sources */,
 				EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */,
 				ED71924A22E9A05E00B1A74E /* GHWHomeViewController.m in Sources */,
@@ -494,7 +508,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemos/MyDemos.pch";
-				INFOPLIST_FILE = MyDemos/Info.plist;
+				INFOPLIST_FILE = MyDemos/Base/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,7 +534,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemos/MyDemos.pch";
-				INFOPLIST_FILE = MyDemos/Info.plist;
+				INFOPLIST_FILE = MyDemos/Base/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
