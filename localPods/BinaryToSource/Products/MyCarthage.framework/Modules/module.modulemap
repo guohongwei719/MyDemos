@@ -1,0 +1,6 @@
+framework module MyCarthage {
+  umbrella header "MyCarthage.h"
+
+  export *
+  module * { export * }
+}

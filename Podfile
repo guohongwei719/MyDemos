@@ -11,7 +11,10 @@ target 'MyDemos' do
 
  pod 'AFNetworking',                 '3.2.1' 
  pod  'Masonry',                  '~> 1.1.0'
- pod 'GHWPodDemo', :path => 'localPods/'
+ pod 'GHWPodDemo', :path => 'localPods/GHWPodDemo/'
+ pod 'BinaryToSource', :path => 'localPods/BinaryToSource/'
+
+ 
  #pod 'LookinServer', :configurations => ['Debug']
  #pod 'GHWTestFramework', :path => 'GHWTestFramework/'#当前指定的分支：
 end

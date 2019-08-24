@@ -14,12 +14,14 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BinaryToSource (0.1.0)
   - GHWPodDemo (0.1.0)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
-  - GHWPodDemo (from `localPods/`)
+  - BinaryToSource (from `localPods/BinaryToSource/`)
+  - GHWPodDemo (from `localPods/GHWPodDemo/`)
   - Masonry (~> 1.1.0)
 
 SPEC REPOS:
@@ -28,14 +30,17 @@ SPEC REPOS:
     - Masonry
 
 EXTERNAL SOURCES:
+  BinaryToSource:
+    :path: localPods/BinaryToSource/
   GHWPodDemo:
-    :path: localPods/
+    :path: localPods/GHWPodDemo/
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BinaryToSource: 5c826a8df599c35001041f3788f0708f6c938609
   GHWPodDemo: d46d130785122ffb5fa38c783eb2b1f68dd3768a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: ee91ad6cb183c566bcad0f365ce298ea63152706
+PODFILE CHECKSUM: 4364f160ade775dce173f2b4e17471ebfb3e330c
 
 COCOAPODS: 1.7.2

@@ -7,6 +7,8 @@
 //
 
 #import "GHWBitToSourceViewController.h"
+#import <GHWTestFramework/GHWTestFramework.h>
+
 @interface GHWBitToSourceViewController ()
 
 @end
@@ -15,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    GHWFrameworkTest *test = [[GHWFrameworkTest alloc] init];
+    [test testFail];
+
     NSLog(@"ok");
 }
 
