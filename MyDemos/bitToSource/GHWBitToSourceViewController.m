@@ -7,8 +7,7 @@
 //
 
 #import "GHWBitToSourceViewController.h"
-#import <GHWTestFramework/GHWTestFramework.h>
-
+#import <MapSourceTest/MapSourceTest.h>
 @interface GHWBitToSourceViewController ()
 
 @end
@@ -17,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    GHWFrameworkTest *test = [[GHWFrameworkTest alloc] init];
+    GHWMapSourceTest *test = [[GHWMapSourceTest alloc] init];
     [test testFail];
 
     NSLog(@"ok");

@@ -41,7 +41,7 @@ def mapSource(debugger, command, result, internal_dict):
     fileName = re.match(r'/.*/(.*)', filePath).group(1)
     print(fileName)
     # 通过文件名在 ~/MMAViewabilitySDK_iOS 目录（可以是任意的地址或者通过 git clone 动态下载）下查找源文件
-    sourcePath = os.popen('mdfind -onlyin  /Users/guohongwei719/Desktop/MyDemos/localPods/BinaryToSource/GHWTestFramework '+fileName).read().replace('\n','')
+    sourcePath = os.popen('mdfind -onlyin  /Users/guohongwei719/Desktop/MyDemos/localPods/BinaryToSource '+fileName).read().replace('\n','')
     print(sourcePath)
     # 通过 settings set target.source-map 命令执行编译源码位置与当前源码位置的映射
     interpreter.HandleCommand('settings set target.source-map ' + filePath + ' ' + sourcePath, returnObject)

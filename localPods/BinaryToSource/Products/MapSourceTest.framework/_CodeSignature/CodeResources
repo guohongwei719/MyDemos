@@ -4,56 +4,56 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/GHWFrameworkTest.h</key>
+		<key>Headers/GHWMapSourceTest.h</key>
 		<data>
-		0GMjO/zvuMxOc8pvzaOUgY8ndXc=
+		NAV+d233eApH5didIdo+0ehhLrc=
 		</data>
-		<key>Headers/GHWTestFramework.h</key>
+		<key>Headers/MapSourceTest.h</key>
 		<data>
-		lJLFfiXNOR7zV17/StEQjyrsNE8=
+		YI8XyPdwls6dAxgp2HXLAy1w1BE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6yUajQHl7BlQfxcUMQBme1j0Fn4=
+		KrWRX+k8nf+BD+37frLaStO4Bu4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		0cfYv/pUdofW4i8MJAvkBdd0Nog=
+		WHSgPX4tg3q2rhRGdWiknh8rcZc=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/GHWFrameworkTest.h</key>
+		<key>Headers/GHWMapSourceTest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0GMjO/zvuMxOc8pvzaOUgY8ndXc=
+			NAV+d233eApH5didIdo+0ehhLrc=
 			</data>
 			<key>hash2</key>
 			<data>
-			jzgFNVjLr/zQ3ldyFCKDHH7bdIaTGctVoR0aBRY7etY=
+			IH2EggDPh9VlIk6GmcgWzBAxTLu/bG0bhNeYDFp8ISs=
 			</data>
 		</dict>
-		<key>Headers/GHWTestFramework.h</key>
+		<key>Headers/MapSourceTest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lJLFfiXNOR7zV17/StEQjyrsNE8=
+			YI8XyPdwls6dAxgp2HXLAy1w1BE=
 			</data>
 			<key>hash2</key>
 			<data>
-			FsslTvhNEiaVilyLMxeIZiHG18xdEei/fgificyhUh4=
+			lEUafWeURYg/LLbn5Yx2/f6SpdJo9D7rabhak2qZUME=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0cfYv/pUdofW4i8MJAvkBdd0Nog=
+			WHSgPX4tg3q2rhRGdWiknh8rcZc=
 			</data>
 			<key>hash2</key>
 			<data>
-			R8Wse5F806vIsZ+BfOWjbAmwm2IIDju4VtOQu5/401E=
+			tRLPYOBVO3nOydPPGJx9RhMvOMsI9eHXUWkFIQE25lk=
 			</data>
 		</dict>
 	</dict>

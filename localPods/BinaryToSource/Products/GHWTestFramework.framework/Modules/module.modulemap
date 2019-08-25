@@ -1,6 +1,0 @@
-framework module GHWTestFramework {
-  umbrella header "GHWTestFramework.h"
-
-  export *
-  module * { export * }
-}
