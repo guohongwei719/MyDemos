@@ -57,7 +57,7 @@
 		ED71925022E9AA6D00B1A74E /* MyDemos.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDemos.pch; sourceTree = "<group>"; };
 		ED71925222E9AE3400B1A74E /* GHWHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWHomeTableViewCell.h; sourceTree = "<group>"; };
 		ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWHomeTableViewCell.m; sourceTree = "<group>"; };
-		ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = LLDB_MapFile.py; path = script/LLDB_MapFile.py; sourceTree = SOURCE_ROOT; };
+		ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = LLDB_MapFile.py; path = MyDemos/bitToSource/LLDB_MapFile.py; sourceTree = SOURCE_ROOT; };
 		EDA1CABE23052EE9003C47BB /* GHWTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWTouchViewController.h; sourceTree = "<group>"; };
 		EDA1CABF23052EE9003C47BB /* GHWTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWTouchViewController.m; sourceTree = "<group>"; };
 		EDA1CAC123052F25003C47BB /* GHWEventAView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventAView.h; sourceTree = "<group>"; };
@@ -125,6 +125,7 @@
 		ED33BB5C230BF3B800C91DEC /* bitToSource */ = {
 			isa = PBXGroup;
 			children = (
+				ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */,
 				ED33BB5D230BF3DA00C91DEC /* GHWBitToSourceViewController.h */,
 				ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */,
 			);
@@ -210,7 +211,6 @@
 		EDCAC3472310D5A1007F9FA8 /* lldb */ = {
 			isa = PBXGroup;
 			children = (
-				ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */,
 				EDCAC3482310D6BB007F9FA8 /* GHWLLDBViewController.h */,
 				EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */,
 				EDCAC34B231101E2007F9FA8 /* GHWLLDBObject.h */,
