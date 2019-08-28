@@ -3,11 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		22EF2EE2A1D54321C55DDBB7 /* libPods-MyDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2482045890725EC0C5D424D1 /* libPods-MyDemos.a */; };
+		ED2A12D22316358B0014826F /* GHWTimeProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12B52316358B0014826F /* GHWTimeProfileDetailViewController.m */; };
+		ED2A12D32316358B0014826F /* image_6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12B82316358B0014826F /* image_6.jpeg */; };
+		ED2A12D42316358B0014826F /* image_13.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12B92316358B0014826F /* image_13.jpeg */; };
+		ED2A12D52316358B0014826F /* image_12.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12BA2316358B0014826F /* image_12.jpeg */; };
+		ED2A12D62316358B0014826F /* image_7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12BB2316358B0014826F /* image_7.jpeg */; };
+		ED2A12D72316358B0014826F /* image_15.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12BC2316358B0014826F /* image_15.jpeg */; };
+		ED2A12D82316358B0014826F /* image_19.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12BD2316358B0014826F /* image_19.jpeg */; };
+		ED2A12D92316358B0014826F /* image_18.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12BE2316358B0014826F /* image_18.jpeg */; };
+		ED2A12DA2316358B0014826F /* image_14.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12BF2316358B0014826F /* image_14.jpeg */; };
+		ED2A12DB2316358B0014826F /* image_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C02316358B0014826F /* image_1.jpeg */; };
+		ED2A12DC2316358B0014826F /* image_17.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C12316358B0014826F /* image_17.jpeg */; };
+		ED2A12DD2316358B0014826F /* image_2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C22316358B0014826F /* image_2.jpeg */; };
+		ED2A12DE2316358B0014826F /* image_20.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C32316358B0014826F /* image_20.jpeg */; };
+		ED2A12DF2316358B0014826F /* image_3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C42316358B0014826F /* image_3.jpeg */; };
+		ED2A12E02316358B0014826F /* image_16.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C52316358B0014826F /* image_16.jpeg */; };
+		ED2A12E12316358B0014826F /* image_8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C62316358B0014826F /* image_8.jpeg */; };
+		ED2A12E22316358B0014826F /* image_11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C72316358B0014826F /* image_11.jpeg */; };
+		ED2A12E32316358B0014826F /* image_4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C82316358B0014826F /* image_4.jpeg */; };
+		ED2A12E42316358B0014826F /* image_5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12C92316358B0014826F /* image_5.jpeg */; };
+		ED2A12E52316358B0014826F /* image_10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12CA2316358B0014826F /* image_10.jpeg */; };
+		ED2A12E62316358B0014826F /* image_9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12CB2316358B0014826F /* image_9.jpeg */; };
+		ED2A12E72316358B0014826F /* GHWTimeProfileImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12CC2316358B0014826F /* GHWTimeProfileImageLayout.m */; };
+		ED2A12E82316358B0014826F /* GHWTimeProfileMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12CD2316358B0014826F /* GHWTimeProfileMainViewController.m */; };
+		ED2A12E92316358B0014826F /* GHWTimeProfileFlowImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12CE2316358B0014826F /* GHWTimeProfileFlowImageCell.m */; };
+		ED2A12EB231636C00014826F /* TimeProfileReadme.md in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12EA231636C00014826F /* TimeProfileReadme.md */; };
+		ED2F323A23140B2400986884 /* LLDB_MapFile.py in Resources */ = {isa = PBXBuildFile; fileRef = ED2F323923140B2400986884 /* LLDB_MapFile.py */; };
 		ED33BB5F230BF3DA00C91DEC /* GHWBitToSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */; };
 		ED43F96A2308F4DA0044DA50 /* UIDevice+GHW.m in Sources */ = {isa = PBXBuildFile; fileRef = ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */; };
 		ED71923422E999AA00B1A74E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71923322E999AA00B1A74E /* AppDelegate.m */; };
@@ -17,7 +43,6 @@
 		ED71924A22E9A05E00B1A74E /* GHWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71924922E9A05E00B1A74E /* GHWHomeViewController.m */; };
 		ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */ = {isa = PBXBuildFile; fileRef = ED71925022E9AA6D00B1A74E /* MyDemos.pch */; };
 		ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */; };
-		ED9F5CD623116C0C00C4CFC5 /* LLDB_MapFile.py in Resources */ = {isa = PBXBuildFile; fileRef = ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */; };
 		EDA1CAC023052EE9003C47BB /* GHWTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CABF23052EE9003C47BB /* GHWTouchViewController.m */; };
 		EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAC223052F25003C47BB /* GHWEventAView.m */; };
 		EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAC523052F3F003C47BB /* GHWEventBView.m */; };
@@ -41,6 +66,36 @@
 		2482045890725EC0C5D424D1 /* libPods-MyDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0530AB7F161664F95F55C2 /* Pods-MyDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.debug.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		D12A5835269FCDF23020B4A1 /* Pods-MyDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.release.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.release.xcconfig"; sourceTree = "<group>"; };
+		ED2A12B52316358B0014826F /* GHWTimeProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWTimeProfileDetailViewController.m; sourceTree = "<group>"; };
+		ED2A12B62316358B0014826F /* GHWTimeProfileFlowImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTimeProfileFlowImageCell.h; sourceTree = "<group>"; };
+		ED2A12B82316358B0014826F /* image_6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpeg; sourceTree = "<group>"; };
+		ED2A12B92316358B0014826F /* image_13.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_13.jpeg; sourceTree = "<group>"; };
+		ED2A12BA2316358B0014826F /* image_12.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_12.jpeg; sourceTree = "<group>"; };
+		ED2A12BB2316358B0014826F /* image_7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_7.jpeg; sourceTree = "<group>"; };
+		ED2A12BC2316358B0014826F /* image_15.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_15.jpeg; sourceTree = "<group>"; };
+		ED2A12BD2316358B0014826F /* image_19.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_19.jpeg; sourceTree = "<group>"; };
+		ED2A12BE2316358B0014826F /* image_18.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_18.jpeg; sourceTree = "<group>"; };
+		ED2A12BF2316358B0014826F /* image_14.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_14.jpeg; sourceTree = "<group>"; };
+		ED2A12C02316358B0014826F /* image_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpeg; sourceTree = "<group>"; };
+		ED2A12C12316358B0014826F /* image_17.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_17.jpeg; sourceTree = "<group>"; };
+		ED2A12C22316358B0014826F /* image_2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpeg; sourceTree = "<group>"; };
+		ED2A12C32316358B0014826F /* image_20.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_20.jpeg; sourceTree = "<group>"; };
+		ED2A12C42316358B0014826F /* image_3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_3.jpeg; sourceTree = "<group>"; };
+		ED2A12C52316358B0014826F /* image_16.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_16.jpeg; sourceTree = "<group>"; };
+		ED2A12C62316358B0014826F /* image_8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_8.jpeg; sourceTree = "<group>"; };
+		ED2A12C72316358B0014826F /* image_11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_11.jpeg; sourceTree = "<group>"; };
+		ED2A12C82316358B0014826F /* image_4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_4.jpeg; sourceTree = "<group>"; };
+		ED2A12C92316358B0014826F /* image_5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_5.jpeg; sourceTree = "<group>"; };
+		ED2A12CA2316358B0014826F /* image_10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_10.jpeg; sourceTree = "<group>"; };
+		ED2A12CB2316358B0014826F /* image_9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_9.jpeg; sourceTree = "<group>"; };
+		ED2A12CC2316358B0014826F /* GHWTimeProfileImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWTimeProfileImageLayout.m; sourceTree = "<group>"; };
+		ED2A12CD2316358B0014826F /* GHWTimeProfileMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWTimeProfileMainViewController.m; sourceTree = "<group>"; };
+		ED2A12CE2316358B0014826F /* GHWTimeProfileFlowImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWTimeProfileFlowImageCell.m; sourceTree = "<group>"; };
+		ED2A12CF2316358B0014826F /* GHWTimeProfileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTimeProfileDetailViewController.h; sourceTree = "<group>"; };
+		ED2A12D02316358B0014826F /* GHWTimeProfileMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTimeProfileMainViewController.h; sourceTree = "<group>"; };
+		ED2A12D12316358B0014826F /* GHWTimeProfileImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTimeProfileImageLayout.h; sourceTree = "<group>"; };
+		ED2A12EA231636C00014826F /* TimeProfileReadme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TimeProfileReadme.md; sourceTree = "<group>"; };
+		ED2F323923140B2400986884 /* LLDB_MapFile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = LLDB_MapFile.py; path = script/LLDB_MapFile.py; sourceTree = SOURCE_ROOT; };
 		ED33BB5D230BF3DA00C91DEC /* GHWBitToSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWBitToSourceViewController.h; sourceTree = "<group>"; };
 		ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWBitToSourceViewController.m; sourceTree = "<group>"; };
 		ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+GHW.m"; sourceTree = "<group>"; };
@@ -57,7 +112,6 @@
 		ED71925022E9AA6D00B1A74E /* MyDemos.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDemos.pch; sourceTree = "<group>"; };
 		ED71925222E9AE3400B1A74E /* GHWHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWHomeTableViewCell.h; sourceTree = "<group>"; };
 		ED71925322E9AE3400B1A74E /* GHWHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWHomeTableViewCell.m; sourceTree = "<group>"; };
-		ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = LLDB_MapFile.py; path = MyDemos/bitToSource/LLDB_MapFile.py; sourceTree = SOURCE_ROOT; };
 		EDA1CABE23052EE9003C47BB /* GHWTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWTouchViewController.h; sourceTree = "<group>"; };
 		EDA1CABF23052EE9003C47BB /* GHWTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWTouchViewController.m; sourceTree = "<group>"; };
 		EDA1CAC123052F25003C47BB /* GHWEventAView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventAView.h; sourceTree = "<group>"; };
@@ -122,10 +176,54 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED2A12B42316358B0014826F /* TimeProfile */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A12EA231636C00014826F /* TimeProfileReadme.md */,
+				ED2A12B72316358B0014826F /* images */,
+				ED2A12B62316358B0014826F /* GHWTimeProfileFlowImageCell.h */,
+				ED2A12CE2316358B0014826F /* GHWTimeProfileFlowImageCell.m */,
+				ED2A12CF2316358B0014826F /* GHWTimeProfileDetailViewController.h */,
+				ED2A12B52316358B0014826F /* GHWTimeProfileDetailViewController.m */,
+				ED2A12D02316358B0014826F /* GHWTimeProfileMainViewController.h */,
+				ED2A12CD2316358B0014826F /* GHWTimeProfileMainViewController.m */,
+				ED2A12D12316358B0014826F /* GHWTimeProfileImageLayout.h */,
+				ED2A12CC2316358B0014826F /* GHWTimeProfileImageLayout.m */,
+			);
+			path = TimeProfile;
+			sourceTree = "<group>";
+		};
+		ED2A12B72316358B0014826F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A12B82316358B0014826F /* image_6.jpeg */,
+				ED2A12B92316358B0014826F /* image_13.jpeg */,
+				ED2A12BA2316358B0014826F /* image_12.jpeg */,
+				ED2A12BB2316358B0014826F /* image_7.jpeg */,
+				ED2A12BC2316358B0014826F /* image_15.jpeg */,
+				ED2A12BD2316358B0014826F /* image_19.jpeg */,
+				ED2A12BE2316358B0014826F /* image_18.jpeg */,
+				ED2A12BF2316358B0014826F /* image_14.jpeg */,
+				ED2A12C02316358B0014826F /* image_1.jpeg */,
+				ED2A12C12316358B0014826F /* image_17.jpeg */,
+				ED2A12C22316358B0014826F /* image_2.jpeg */,
+				ED2A12C32316358B0014826F /* image_20.jpeg */,
+				ED2A12C42316358B0014826F /* image_3.jpeg */,
+				ED2A12C52316358B0014826F /* image_16.jpeg */,
+				ED2A12C62316358B0014826F /* image_8.jpeg */,
+				ED2A12C72316358B0014826F /* image_11.jpeg */,
+				ED2A12C82316358B0014826F /* image_4.jpeg */,
+				ED2A12C92316358B0014826F /* image_5.jpeg */,
+				ED2A12CA2316358B0014826F /* image_10.jpeg */,
+				ED2A12CB2316358B0014826F /* image_9.jpeg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		ED33BB5C230BF3B800C91DEC /* bitToSource */ = {
 			isa = PBXGroup;
 			children = (
-				ED9F5CD523116C0C00C4CFC5 /* LLDB_MapFile.py */,
+				ED2F323923140B2400986884 /* LLDB_MapFile.py */,
 				ED33BB5D230BF3DA00C91DEC /* GHWBitToSourceViewController.h */,
 				ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */,
 			);
@@ -153,6 +251,7 @@
 		ED71923122E999AA00B1A74E /* MyDemos */ = {
 			isa = PBXGroup;
 			children = (
+				ED2A12B42316358B0014826F /* TimeProfile */,
 				EDCAC3472310D5A1007F9FA8 /* lldb */,
 				ED33BB5C230BF3B800C91DEC /* bitToSource */,
 				EDA1CABD23052E8A003C47BB /* TouchEvent */,
@@ -247,6 +346,7 @@
 				ED71922B22E999AA00B1A74E /* Sources */,
 				ED71922C22E999AA00B1A74E /* Frameworks */,
 				ED71922D22E999AA00B1A74E /* Resources */,
+				9C7ADF6979A4D10CC7EEB7CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,16 +394,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2A12D52316358B0014826F /* image_12.jpeg in Resources */,
+				ED2A12DF2316358B0014826F /* image_3.jpeg in Resources */,
+				ED2A12D62316358B0014826F /* image_7.jpeg in Resources */,
+				ED2A12E62316358B0014826F /* image_9.jpeg in Resources */,
+				ED2A12E42316358B0014826F /* image_5.jpeg in Resources */,
 				ED71923F22E999AC00B1A74E /* LaunchScreen.storyboard in Resources */,
-				ED9F5CD623116C0C00C4CFC5 /* LLDB_MapFile.py in Resources */,
+				ED2A12D32316358B0014826F /* image_6.jpeg in Resources */,
+				ED2F323A23140B2400986884 /* LLDB_MapFile.py in Resources */,
+				ED2A12DE2316358B0014826F /* image_20.jpeg in Resources */,
 				ED71923C22E999AC00B1A74E /* Assets.xcassets in Resources */,
+				ED2A12E02316358B0014826F /* image_16.jpeg in Resources */,
+				ED2A12E52316358B0014826F /* image_10.jpeg in Resources */,
+				ED2A12E22316358B0014826F /* image_11.jpeg in Resources */,
+				ED2A12DD2316358B0014826F /* image_2.jpeg in Resources */,
+				ED2A12E12316358B0014826F /* image_8.jpeg in Resources */,
+				ED2A12E32316358B0014826F /* image_4.jpeg in Resources */,
+				ED2A12D92316358B0014826F /* image_18.jpeg in Resources */,
 				EDA1CAD723067BDB003C47BB /* Readme.md in Resources */,
+				ED2A12DB2316358B0014826F /* image_1.jpeg in Resources */,
+				ED2A12DA2316358B0014826F /* image_14.jpeg in Resources */,
+				ED2A12EB231636C00014826F /* TimeProfileReadme.md in Resources */,
+				ED2A12D42316358B0014826F /* image_13.jpeg in Resources */,
+				ED2A12DC2316358B0014826F /* image_17.jpeg in Resources */,
+				ED2A12D72316358B0014826F /* image_15.jpeg in Resources */,
+				ED2A12D82316358B0014826F /* image_19.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9C7ADF6979A4D10CC7EEB7CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D8F2408C5B1167B9CD7546B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,10 +474,13 @@
 				ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */,
 				ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */,
 				EDD5447523029F2300092443 /* GHWModuleB.m in Sources */,
+				ED2A12E72316358B0014826F /* GHWTimeProfileImageLayout.m in Sources */,
+				ED2A12E92316358B0014826F /* GHWTimeProfileFlowImageCell.m in Sources */,
 				EDCAC34D231101E2007F9FA8 /* GHWLLDBObject.m in Sources */,
 				EDD5447223029EF400092443 /* GHWModuleA.m in Sources */,
 				EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */,
 				EDCAC34A2310D6BB007F9FA8 /* GHWLLDBViewController.m in Sources */,
+				ED2A12D22316358B0014826F /* GHWTimeProfileDetailViewController.m in Sources */,
 				EDD544822303F75F00092443 /* GHWAttributeBaseObject.m in Sources */,
 				EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */,
 				ED71924A22E9A05E00B1A74E /* GHWHomeViewController.m in Sources */,
@@ -356,6 +497,7 @@
 				EDA1CAC923052F4B003C47BB /* GHWEventCView.m in Sources */,
 				EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */,
 				EDA1CACC23052F5B003C47BB /* GHWEventDView.m in Sources */,
+				ED2A12E82316358B0014826F /* GHWTimeProfileMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks.sh
-${PODS_ROOT}/../localPods/BinaryToSource/Products/MyCarthage.framework
+${PODS_ROOT}/LookinServer/LookinServer.framework

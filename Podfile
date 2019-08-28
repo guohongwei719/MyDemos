@@ -15,6 +15,6 @@ target 'MyDemos' do
  pod 'BinaryToSource', :path => 'localPods/BinaryToSource/'
 
  
- #pod 'LookinServer', :configurations => ['Debug']
+ pod 'LookinServer'
  #pod 'GHWTestFramework', :path => 'GHWTestFramework/'#当前指定的分支：
 end

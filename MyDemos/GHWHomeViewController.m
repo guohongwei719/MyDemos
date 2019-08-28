@@ -16,6 +16,47 @@
 #import "GHWTouchViewController.h"
 #import "GHWBitToSourceViewController.h"
 #import "GHWLLDBViewController.h"
+#import "GHWTimeProfileMainViewController.h"
+
+//当前控制器
+UIViewController *AutoGetRoSourceViewController() {
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    UIViewController *topVC = keyWindow.rootViewController;
+    while (topVC.presentedViewController) {
+        topVC = topVC.presentedViewController;
+    }
+    
+    if ([topVC isKindOfClass:[UINavigationController class]]) {
+        topVC = ((UINavigationController*)topVC).topViewController;
+    }
+    
+    if ([topVC isKindOfClass:[UITabBarController class]]) {
+        topVC = ((UITabBarController*)topVC).selectedViewController;
+    }
+    
+    return topVC;
+}
+
+UINavigationController* AutoGetNavigationViewController(UIViewController *sourceVC) {
+    
+    UINavigationController *navigationController = nil;
+    if ([sourceVC isKindOfClass:[UINavigationController class]]) {
+        navigationController = (id)sourceVC;
+    } else {
+        UIViewController *superViewController = sourceVC.parentViewController;
+        while (superViewController) {
+            if ([superViewController isKindOfClass:[UINavigationController class]]) {
+                navigationController = (id)superViewController;
+                break;
+            } else {
+                superViewController = superViewController.parentViewController;
+            }
+        }
+    }
+    
+    return navigationController;
+}
+
 
 @interface GHWHomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -37,7 +78,7 @@
 
 
 - (void)configData {
-    self.dataArray = @[@"启动项管理__attribute__", @"响应事件机制", @"二进制源码映射", @"LLDB"];
+    self.dataArray = @[@"启动项管理__attribute__", @"响应事件机制", @"二进制源码映射", @"LLDB", @"Time Profile"];
     
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
@@ -83,6 +124,8 @@
         vc = [GHWBitToSourceViewController new];
     } else if (indexPath.row == 3) {
         vc = [GHWLLDBViewController new];
+    } else if (indexPath.row == 4) {
+        vc = [GHWTimeProfileMainViewController new];
     }
     vc.titleStr = [self.dataArray objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
@@ -143,6 +186,58 @@
     return _mainTableView;
 }
 
+@end
+
+#if DEBUG
+@interface UIWindow (Motion)
+
+// @override
+- (BOOL)canBecomeFirstResponder;
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event;
+
+@end
+
+@implementation UIWindow (Motion)
+- (BOOL)canBecomeFirstResponder {//默认是NO，所以得重写此方法，设成YES
+    return YES;
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    [self showMenu];
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    NSLog(@"shake");
+}
+
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+}
+
+- (void)showMenu {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *exportAction = [UIAlertAction actionWithTitle:@"导出当前UI结构" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_Export" object:nil];
+    }];
+    UIAlertAction *seeElementAction = [UIAlertAction actionWithTitle:@"审查元素" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_2D" object:nil];
+    }];
+    UIAlertAction *threeDAction = [UIAlertAction actionWithTitle:@"3D 视图" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"Lookin_3D" object:nil];
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        
+    }];
+    
+    [alertController addAction:exportAction];
+    [alertController addAction:seeElementAction];
+    [alertController addAction:threeDAction];
+    [alertController addAction:cancelAction];
+    [AutoGetRoSourceViewController() presentViewController:alertController animated:YES completion:nil];
+}
 
 
 @end
+
+#endif
+
+

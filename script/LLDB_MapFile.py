@@ -8,7 +8,7 @@ import os
 
 # command 是用户输入的符号地址
 def mapSource(debugger, command, result, internal_dict):
-    print('command' + command)
+    print('command: ' + command)
     # 获取 lldb 的命令交互环境，可以动态执行一些命令，比如 po obj
     interpreter = lldb.debugger.GetCommandInterpreter()
     # 创建一个对象，命令执行结果会通过该对象保存
@@ -17,7 +17,7 @@ def mapSource(debugger, command, result, internal_dict):
     interpreter.HandleCommand('image lookup -v --address ' + command, returnObject)
     # 获取返回结果
     output = returnObject.GetOutput();
-    print('output' + output)
+    print('output: ' + output)
 
     # 下面的代码设计思想是：
     # 1、根据{地址}查找该地址所属的{源码编译路径}+{编译文件名}
@@ -47,5 +47,4 @@ def mapSource(debugger, command, result, internal_dict):
 # 添加一个 扩展命令。mapSource
 # 在 lldb 输入 mapSource 0x10803839 时，会执行 lldb_MapFile.py 文件的 mapSource 方法
 def __lldb_init_module(debugger, internal_dict):
-    # debugger.HandleCommand('command script add -f LLDB_MapFile.sun_map_address sun_map_address')
     debugger.HandleCommand('command script add mapSource -f lldb_MapFile.mapSource')
