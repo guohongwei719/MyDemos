@@ -26,7 +26,6 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     
-    GHWLLDBObject *lldbObject = [GHWLLDBObject new];
     Class cls = NSClassFromString(@"GHWLLDBObject");
     id obj = [[cls alloc] init];
     NSLog(@"%@, %@", cls, obj);

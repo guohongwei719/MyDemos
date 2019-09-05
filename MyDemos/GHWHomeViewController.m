@@ -17,6 +17,7 @@
 #import "GHWBitToSourceViewController.h"
 #import "GHWLLDBViewController.h"
 #import "GHWTimeProfileMainViewController.h"
+#import "GHWExtensionViewController.h"
 
 //当前控制器
 UIViewController *AutoGetRoSourceViewController() {
@@ -72,19 +73,16 @@ UINavigationController* AutoGetNavigationViewController(UIViewController *source
     [self configView];
 }
 
-- (void)testUnUsedMethod {
-    NSLog(@"testUnUsedMethod");
-}
-
-
 - (void)configData {
-    self.dataArray = @[@"启动项管理__attribute__", @"响应事件机制", @"二进制源码映射", @"LLDB", @"Time Profile"];
-    
+    self.dataArray = @[@{@"插件": [GHWExtensionViewController class]},
+                       @{@"启动项管理__attribute__": [GHWAttributeViewController class]},
+                       @{@"响应事件机制": [GHWTouchViewController class]},
+                       @{@"二进制源码映射": [GHWBitToSourceViewController class]},
+                       @{@"LLDB": [GHWLLDBViewController class]},
+                       @{@"Time Profile": [GHWTimeProfileMainViewController class]}];
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
 }
-
-
 
 - (void)configView {
     self.title = @"demos";
@@ -103,8 +101,10 @@ UINavigationController* AutoGetNavigationViewController(UIViewController *source
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *dic = [self.dataArray objectAtIndex:indexPath.row];
+    NSString *dicKey = [dic allKeys][0];
     GHWHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GHWHomeTableViewCell"];
-    cell.labelTitle.text = [NSString stringWithFormat:@"%@. %@", @(indexPath.row + 1), self.dataArray[indexPath.row]];
+    cell.labelTitle.text = [NSString stringWithFormat:@"%@. %@", @(indexPath.row + 1), dicKey];
     return cell;
 }
 
@@ -115,19 +115,11 @@ UINavigationController* AutoGetNavigationViewController(UIViewController *source
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    GHWBaseViewController *vc;
-    if (indexPath.row == 0) {
-        vc = [[GHWAttributeViewController alloc] init];
-    } else if (indexPath.row == 1) {
-        vc = [[GHWTouchViewController alloc] init];
-    } else if (indexPath.row == 2) {
-        vc = [GHWBitToSourceViewController new];
-    } else if (indexPath.row == 3) {
-        vc = [GHWLLDBViewController new];
-    } else if (indexPath.row == 4) {
-        vc = [GHWTimeProfileMainViewController new];
-    }
-    vc.titleStr = [self.dataArray objectAtIndex:indexPath.row];
+    NSDictionary *dic = [self.dataArray objectAtIndex:indexPath.row];
+    NSString *dicKey = [dic allKeys][0];
+    Class cls = dic[dicKey];
+    GHWBaseViewController *vc = [[cls alloc] init];
+    vc.titleStr = dicKey;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
