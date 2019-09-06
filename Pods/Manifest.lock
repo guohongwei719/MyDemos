@@ -16,20 +16,17 @@ PODS:
     - AFNetworking/NSURLSession
   - BinaryToSource (0.1.0)
   - GHWPodDemo (0.1.0)
-  - LookinServer (0.9.4)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 3.2.1)
   - BinaryToSource (from `localPods/BinaryToSource/`)
   - GHWPodDemo (from `localPods/GHWPodDemo/`)
-  - LookinServer
   - Masonry (~> 1.1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - LookinServer
     - Masonry
 
 EXTERNAL SOURCES:
@@ -42,9 +39,8 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BinaryToSource: 5c826a8df599c35001041f3788f0708f6c938609
   GHWPodDemo: d46d130785122ffb5fa38c783eb2b1f68dd3768a
-  LookinServer: 54eb99921647bda4068ff8776d842285e2bf0adb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 3d81f5e7b41821be62a916022a6d3f8e44a1a7c7
+PODFILE CHECKSUM: 577d8f685ea0c9d251134ce7e5c15f5fafdba01c
 
 COCOAPODS: 1.7.2
