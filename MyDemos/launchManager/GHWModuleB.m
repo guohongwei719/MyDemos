@@ -10,12 +10,12 @@
 
 @implementation GHWModuleB
 
-GHW_FUNCTION_EXPORT(Stage_A)() {
-    printf("ModuleB:Stage_A\n");
+GHW_FUNCTION_EXPORT(stage_a)() {
+    printf("ModuleB:stage_a\n");
 }
 
-GHW_FUNCTION_EXPORT(Stage_B)() {
-    printf("ModuleB:Stage_B\n");
+GHW_FUNCTION_EXPORT(stage_b)() {
+    printf("ModuleB:stage_b\n");
 }
 
 @end

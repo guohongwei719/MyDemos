@@ -21,11 +21,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     GHWAttributeTestObject *testObj = [[GHWAttributeTestObject alloc] init];
-//    [testObj testMethod1];
-//    [testObj testMethod2];
+//    [testObj testMethod1];  // NS_UNAVAILABLE
+//    [testObj testMethod2];  // unavailable
     [testObj testWithSex:@"1" address:@"2" age:4];
-//    [testObj testMethod4];
-//    [testObj testMethod5];
+//    [testObj testWithSex:nil address:nil age:4];   // nonnull
+
     [testObj work];
     NSString *testCleanUp __attribute__((cleanup(printTestString))) = @"测试一下";
     testCleanUp = @"1";
@@ -36,13 +36,13 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [[GHWExport sharedInstance] executeArrayForKey:@"Stage_A"];
+    [[GHWExport sharedInstance] executeArrayForKey:@"stage_a"];
 
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [GHWExport.sharedInstance executeArrayForKey:@"Stage_B"];
+    [GHWExport.sharedInstance executeArrayForKey:@"stage_b"];
 
 }
 
