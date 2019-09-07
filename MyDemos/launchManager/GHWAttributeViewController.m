@@ -2,7 +2,7 @@
 //  GHWAttributeViewController.m
 //  MyDemos
 //
-//  Created by 郭宏伟 on 2019/8/14.
+//  Created by 黑化肥发灰 on 2019/8/14.
 //  Copyright © 2019 Jingyao. All rights reserved.
 //
 
@@ -36,13 +36,13 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [[GHWExport sharedInstance] executeArrayForKey:@"stage_a"];
+    [[GHWExport sharedInstance] executeArrayForKey:@"Stage_A"];
 
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [GHWExport.sharedInstance executeArrayForKey:@"stage_b"];
+    [GHWExport.sharedInstance executeArrayForKey:@"Stage_B"];
 
 }
 

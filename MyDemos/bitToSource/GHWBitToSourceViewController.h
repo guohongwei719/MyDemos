@@ -2,7 +2,7 @@
 //  GHWBitToSourceViewController.h
 //  MyDemos
 //
-//  Created by 郭宏伟 on 2019/8/20.
+//  Created by 黑化肥发灰 on 2019/8/20.
 //  Copyright © 2019 Jingyao. All rights reserved.
 //
 
