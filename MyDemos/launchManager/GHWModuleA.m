@@ -12,6 +12,7 @@
 
 GHW_FUNCTION_EXPORT(pre_main)() {
     printf("ModuleA:pre_main\n");
+    
 }
 
 //GHW_FUNCTION_EXPORT(Stage_A)() {

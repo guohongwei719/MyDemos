@@ -84,7 +84,6 @@ def mapSource(debugger, command, result, internal_dict):
 
         out = open('/Users/guohongwei719/Desktop/MyDemos/script/path.txt', 'w')
         out.writelines(content)
-        file_handler.close()
         out.close()
 
 

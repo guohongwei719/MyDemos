@@ -53,7 +53,8 @@ void printTestString(NSString **string){
 __attribute__((constructor))
 void premain() {
     [[GHWExport sharedInstance] executeArrayForKey:@"pre_main"];
-}
+    
+    }
 
 
 @end
