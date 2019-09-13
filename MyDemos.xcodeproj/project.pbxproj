@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22EF2EE2A1D54321C55DDBB7 /* libPods-MyDemos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2482045890725EC0C5D424D1 /* libPods-MyDemos.a */; };
+		86FC7CC86F5B22E7B66E304B /* Pods_MyDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92ECD34EE334B91F6AB5469A /* Pods_MyDemos.framework */; };
 		ED21AB81231C02AE0091CA80 /* GHWExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED21AB80231C02AE0091CA80 /* GHWExtensionViewController.m */; };
 		ED2A12D22316358B0014826F /* GHWTimeProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12B52316358B0014826F /* GHWTimeProfileDetailViewController.m */; };
 		ED2A12D32316358B0014826F /* image_6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12B82316358B0014826F /* image_6.jpeg */; };
@@ -34,7 +34,6 @@
 		ED2A12E82316358B0014826F /* GHWTimeProfileMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12CD2316358B0014826F /* GHWTimeProfileMainViewController.m */; };
 		ED2A12E92316358B0014826F /* GHWTimeProfileFlowImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12CE2316358B0014826F /* GHWTimeProfileFlowImageCell.m */; };
 		ED2A12EB231636C00014826F /* TimeProfileReadme.md in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12EA231636C00014826F /* TimeProfileReadme.md */; };
-		ED2F323A23140B2400986884 /* LLDB_MapFile.py in Resources */ = {isa = PBXBuildFile; fileRef = ED2F323923140B2400986884 /* LLDB_MapFile.py */; };
 		ED33BB5F230BF3DA00C91DEC /* GHWBitToSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */; };
 		ED43F96A2308F4DA0044DA50 /* UIDevice+GHW.m in Sources */ = {isa = PBXBuildFile; fileRef = ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */; };
 		ED71923422E999AA00B1A74E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71923322E999AA00B1A74E /* AppDelegate.m */; };
@@ -56,7 +55,6 @@
 		EDCAC34A2310D6BB007F9FA8 /* GHWLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */; };
 		EDCAC34D231101E2007F9FA8 /* GHWLLDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC34C231101E2007F9FA8 /* GHWLLDBObject.m */; };
 		EDD5447223029EF400092443 /* GHWModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447123029EF400092443 /* GHWModuleA.m */; };
-		EDD5447523029F2300092443 /* GHWModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447423029F2300092443 /* GHWModuleB.m */; };
 		EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544782303ECFB00092443 /* GHWAttributeViewController.m */; };
 		EDD5447C2303EE3700092443 /* GHWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447B2303EE3700092443 /* GHWBaseViewController.m */; };
 		EDD5447F2303F14900092443 /* GHWAttributeTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447E2303F14900092443 /* GHWAttributeTestObject.m */; };
@@ -64,7 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2482045890725EC0C5D424D1 /* libPods-MyDemos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDemos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92ECD34EE334B91F6AB5469A /* Pods_MyDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0530AB7F161664F95F55C2 /* Pods-MyDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.debug.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		D12A5835269FCDF23020B4A1 /* Pods-MyDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.release.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.release.xcconfig"; sourceTree = "<group>"; };
 		ED21AB7F231C02AE0091CA80 /* GHWExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWExtensionViewController.h; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		ED2A12D02316358B0014826F /* GHWTimeProfileMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTimeProfileMainViewController.h; sourceTree = "<group>"; };
 		ED2A12D12316358B0014826F /* GHWTimeProfileImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTimeProfileImageLayout.h; sourceTree = "<group>"; };
 		ED2A12EA231636C00014826F /* TimeProfileReadme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TimeProfileReadme.md; sourceTree = "<group>"; };
-		ED2F323923140B2400986884 /* LLDB_MapFile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = LLDB_MapFile.py; path = script/LLDB_MapFile.py; sourceTree = SOURCE_ROOT; };
 		ED33BB5D230BF3DA00C91DEC /* GHWBitToSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWBitToSourceViewController.h; sourceTree = "<group>"; };
 		ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWBitToSourceViewController.m; sourceTree = "<group>"; };
 		ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+GHW.m"; sourceTree = "<group>"; };
@@ -138,8 +135,6 @@
 		EDCAC34C231101E2007F9FA8 /* GHWLLDBObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWLLDBObject.m; sourceTree = "<group>"; };
 		EDD5447023029EF400092443 /* GHWModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleA.h; sourceTree = "<group>"; };
 		EDD5447123029EF400092443 /* GHWModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleA.m; sourceTree = "<group>"; };
-		EDD5447323029F2300092443 /* GHWModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleB.h; sourceTree = "<group>"; };
-		EDD5447423029F2300092443 /* GHWModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleB.m; sourceTree = "<group>"; };
 		EDD544772303ECFB00092443 /* GHWAttributeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWAttributeViewController.h; sourceTree = "<group>"; };
 		EDD544782303ECFB00092443 /* GHWAttributeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWAttributeViewController.m; sourceTree = "<group>"; };
 		EDD5447A2303EE3700092443 /* GHWBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWBaseViewController.h; sourceTree = "<group>"; };
@@ -155,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22EF2EE2A1D54321C55DDBB7 /* libPods-MyDemos.a in Frameworks */,
+				86FC7CC86F5B22E7B66E304B /* Pods_MyDemos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +160,7 @@
 		2B241CE993EB989B6B62331D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2482045890725EC0C5D424D1 /* libPods-MyDemos.a */,
+				92ECD34EE334B91F6AB5469A /* Pods_MyDemos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,7 +221,6 @@
 		ED33BB5C230BF3B800C91DEC /* bitToSource */ = {
 			isa = PBXGroup;
 			children = (
-				ED2F323923140B2400986884 /* LLDB_MapFile.py */,
 				ED33BB5D230BF3DA00C91DEC /* GHWBitToSourceViewController.h */,
 				ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */,
 			);
@@ -336,8 +330,6 @@
 			children = (
 				EDD5447023029EF400092443 /* GHWModuleA.h */,
 				EDD5447123029EF400092443 /* GHWModuleA.m */,
-				EDD5447323029F2300092443 /* GHWModuleB.h */,
-				EDD5447423029F2300092443 /* GHWModuleB.m */,
 				EDD544772303ECFB00092443 /* GHWAttributeViewController.h */,
 				EDD544782303ECFB00092443 /* GHWAttributeViewController.m */,
 				EDD5447D2303F14900092443 /* GHWAttributeTestObject.h */,
@@ -359,6 +351,7 @@
 				ED71922B22E999AA00B1A74E /* Sources */,
 				ED71922C22E999AA00B1A74E /* Frameworks */,
 				ED71922D22E999AA00B1A74E /* Resources */,
+				6D40A4D75F9EC6944096234F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,7 +406,6 @@
 				ED2A12E42316358B0014826F /* image_5.jpeg in Resources */,
 				ED71923F22E999AC00B1A74E /* LaunchScreen.storyboard in Resources */,
 				ED2A12D32316358B0014826F /* image_6.jpeg in Resources */,
-				ED2F323A23140B2400986884 /* LLDB_MapFile.py in Resources */,
 				ED2A12DE2316358B0014826F /* image_20.jpeg in Resources */,
 				ED71923C22E999AC00B1A74E /* Assets.xcassets in Resources */,
 				ED2A12E02316358B0014826F /* image_16.jpeg in Resources */,
@@ -437,6 +429,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6D40A4D75F9EC6944096234F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D8F2408C5B1167B9CD7546B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,7 +477,6 @@
 			files = (
 				ED71925122E9AD3700B1A74E /* MyDemos.pch in Sources */,
 				ED71925422E9AE3400B1A74E /* GHWHomeTableViewCell.m in Sources */,
-				EDD5447523029F2300092443 /* GHWModuleB.m in Sources */,
 				ED2A12E72316358B0014826F /* GHWTimeProfileImageLayout.m in Sources */,
 				ED2A12E92316358B0014826F /* GHWTimeProfileFlowImageCell.m in Sources */,
 				EDCAC34D231101E2007F9FA8 /* GHWLLDBObject.m in Sources */,

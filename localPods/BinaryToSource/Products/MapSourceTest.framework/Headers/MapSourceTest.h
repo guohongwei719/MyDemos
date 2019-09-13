@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double MapSourceTestVersionNumber;
 FOUNDATION_EXPORT const unsigned char MapSourceTestVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MapSourceTest/PublicHeader.h>
-#import "GHWMapSourceTest.h"
 
+#import <MapSourceTest/GHWMapSourceTest.h>

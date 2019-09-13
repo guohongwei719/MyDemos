@@ -161,10 +161,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/LookinServer/LookinServer.framework"
+  install_framework "${PODS_ROOT}/../localPods/BinaryToSource/Products/MapSourceTest.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GHWAttributeLib/GHWAttributeLib.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GHWPodDemo/GHWPodDemo.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/LookinServer/LookinServer.framework"
+  install_framework "${PODS_ROOT}/../localPods/BinaryToSource/Products/MapSourceTest.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GHWAttributeLib/GHWAttributeLib.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GHWPodDemo/GHWPodDemo.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

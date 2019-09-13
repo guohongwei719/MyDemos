@@ -10,26 +10,27 @@ import os
 # command 是用户输入的符号地址
 def mapSource(debugger, command, result, internal_dict):
     print('command: ' + command)
-
+    savedFilePath = '/Users/guohongwei719/Desktop/MyDemos/script/path.txt'
+    localSourcePath = '/Users/guohongwei719/Desktop/MyDemos/localPods/BinaryToSource'
     if command == '':
         print('没参数')
         current_path = os.getcwd()
         print('当前所在路径：' + current_path)
         interpreter = lldb.debugger.GetCommandInterpreter()
         returnObject = lldb.SBCommandReturnObject()
-        file_handler = open('/Users/guohongwei719/Desktop/MyDemos/script/path.txt', 'r')
+        file_handler = open(savedFilePath, 'r')
         content = file_handler.readlines()
         if len(content) == 2:
-            filePath = content[0].replace('\n', '')
-            sourcePath = content[1].replace('\n', '')
+            compileFilePath = content[0].replace('\n', '')
+            localSourceFilePath = content[1].replace('\n', '')
             # filePath = '/Users/guohongwei719/Desktop/test/MapSourceTest/MapSourceTest/GHWMapSourceTest.m'
-            # sourcePath = '/Users/guohongwei719/Desktop/MyDemos/localPods/BinaryToSource/MapSourceTest/MapSourceTest/GHWMapSourceTest.m'
-            print('filePath = ' + filePath)
-            print('sourcePath = ' + sourcePath)
-            interpreter.HandleCommand('settings set target.source-map ' + filePath + ' ' + sourcePath, returnObject)
+            # sourcePath = '/Users/guohongwei719/Desktop/GHWBinaryMapSource/localPods/BinaryToSource/MapSourceTest/MapSourceTest/GHWMapSourceTest.m'
+            print('编译时文件路径 compileFilePath = ' + compileFilePath)
+            print('本地对应源码文件路径 sourcePath = ' + localSourceFilePath)
+            interpreter.HandleCommand('settings set target.source-map ' + compileFilePath + ' ' + localSourceFilePath, returnObject)
             output = returnObject.GetOutput();
-            print('output: ' + output)
-            file_handler.close()
+            # print('output: ' + output)
+            # file_handler.close()
         else:
             print('缺失路径信息')
 
@@ -45,7 +46,7 @@ def mapSource(debugger, command, result, internal_dict):
         interpreter.HandleCommand('image lookup -v --address ' + command, returnObject)
         # 获取返回结果
         output = returnObject.GetOutput();
-        print('output: ' + output)
+        print('output: \n' + output)
 
         # 下面的代码设计思想是：
         # 1、根据{地址}查找该地址所属的{源码编译路径}+{编译文件名}
@@ -60,37 +61,37 @@ def mapSource(debugger, command, result, internal_dict):
 
 
         # 通过正则获取二进制编译时，源码的真正路径
-        filePath = re.match(r'(.|\n)*file = "(.*?)".*', output,re.M).group(2)
-        print('filePath = ' + filePath)
+        compileFilePath = re.match(r'(.|\n)*file = "(.*?)".*', output,re.M).group(2)
+        print('编译时文件路径 compileFilePath = ' + compileFilePath)
 
         # 通过真正路径获取编译源文件的文件名
-        fileName = re.match(r'/.*/(.*)', filePath).group(1)
-        print('fileName = ' + fileName)
+        fileName = re.match(r'/.*/(.*)', compileFilePath).group(1)
+        print('文件名称 fileName = ' + fileName)
         # 通过文件名在 ~/MMAViewabilitySDK_iOS 目录（可以是任意的地址或者通过 git clone 动态下载）下查找源文件
-        sourcePath = os.popen('mdfind -onlyin  /Users/guohongwei719/Desktop/MyDemos/localPods/BinaryToSource '+fileName).read().replace('\n','')
-        print('sourcePath = ' + sourcePath)
+        localSourceFilePath = os.popen('mdfind -onlyin ' + localSourcePath + ' ' + fileName).read().replace('\n','')
+        print('本地对应源码文件路径 localSourceFilePath = ' + localSourceFilePath)
 
-        current_path = os.getcwd()
-        print('current_path = ' + current_path)
+        # current_path = os.getcwd()
+        # print('current_path = ' + current_path)
 
-        txtFilePath = os.path.join(current_path, 'path.txt')
-        print('txtFilePath = ' + txtFilePath)
+        # txtFilePath = os.path.join(current_path, 'path.txt')
+        # print('txtFilePath = ' + txtFilePath)
 
         content = []
 
-        content.append(filePath)
+        content.append(compileFilePath)
         content.append('\n')
-        content.append(sourcePath)
+        content.append(localSourceFilePath)
 
-        out = open('/Users/guohongwei719/Desktop/MyDemos/script/path.txt', 'w')
+        out = open(savedFilePath, 'w')
         out.writelines(content)
         out.close()
 
 
         # 通过 settings set target.source-map 命令执行编译源码位置与当前源码位置的映射
-        interpreter.HandleCommand('settings set target.source-map ' + filePath + ' ' + sourcePath, returnObject)
+        interpreter.HandleCommand('settings set target.source-map ' + compileFilePath + ' ' + localSourceFilePath, returnObject)
 
-# 添加一个 扩展命令。mapSource
-# 在 lldb 输入 mapSource 0x10803839 时，会执行 lldb_MapFile.py 文件的 mapSource 方法
+# 添加一个 扩展命令 mapSource
+# 在 lldb 输入 mapSource 0x10803839 时，会执行 LLDB_MapFile.py 文件的 mapSource 方法
 def __lldb_init_module(debugger, internal_dict):
-    debugger.HandleCommand('command script add mapSource -f lldb_MapFile.mapSource')
+    debugger.HandleCommand('command script add mapSource -f LLDB_MapFile.mapSource')
