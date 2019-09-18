@@ -17,7 +17,8 @@
 #import "GHWBitToSourceViewController.h"
 #import "GHWLLDBViewController.h"
 #import "GHWTimeProfileMainViewController.h"
-#import "GHWExtensionViewController.h"
+#import "GHWTestViewController.h"
+#import "GHWAllocationViewController.h"
 
 //当前控制器
 UIViewController *AutoGetRoSourceViewController() {
@@ -74,11 +75,12 @@ UINavigationController* AutoGetNavigationViewController(UIViewController *source
 }
 
 - (void)configData {
-    self.dataArray = @[@{@"插件": [GHWExtensionViewController class]},
+    self.dataArray = @[@{@"插件": [GHWTestViewController class]},
                        @{@"启动项管理__attribute__": [GHWAttributeViewController class]},
                        @{@"响应事件机制": [GHWTouchViewController class]},
                        @{@"二进制源码映射": [GHWBitToSourceViewController class]},
                        @{@"LLDB": [GHWLLDBViewController class]},
+                       @{@"Allocation 内存分配": [GHWAllocationViewController class]},
                        @{@"Time Profile": [GHWTimeProfileMainViewController class]}];
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];

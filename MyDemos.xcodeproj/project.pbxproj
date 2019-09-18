@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		86FC7CC86F5B22E7B66E304B /* Pods_MyDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92ECD34EE334B91F6AB5469A /* Pods_MyDemos.framework */; };
-		ED21AB81231C02AE0091CA80 /* GHWExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED21AB80231C02AE0091CA80 /* GHWExtensionViewController.m */; };
 		ED2A12D22316358B0014826F /* GHWTimeProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12B52316358B0014826F /* GHWTimeProfileDetailViewController.m */; };
 		ED2A12D32316358B0014826F /* image_6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12B82316358B0014826F /* image_6.jpeg */; };
 		ED2A12D42316358B0014826F /* image_13.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12B92316358B0014826F /* image_13.jpeg */; };
@@ -36,6 +35,10 @@
 		ED2A12EB231636C00014826F /* TimeProfileReadme.md in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12EA231636C00014826F /* TimeProfileReadme.md */; };
 		ED33BB5F230BF3DA00C91DEC /* GHWBitToSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */; };
 		ED43F96A2308F4DA0044DA50 /* UIDevice+GHW.m in Sources */ = {isa = PBXBuildFile; fileRef = ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */; };
+		ED44A96623325EF100656F18 /* GHWAllocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED44A96023325EF100656F18 /* GHWAllocationViewController.m */; };
+		ED44A96723325EF100656F18 /* GHWAllocationImageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED44A96123325EF100656F18 /* GHWAllocationImageLayout.m */; };
+		ED44A96823325EF100656F18 /* GHWAllocationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED44A96223325EF100656F18 /* GHWAllocationDetailViewController.m */; };
+		ED44A96923325EF100656F18 /* GHWAllocationFlowImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED44A96523325EF100656F18 /* GHWAllocationFlowImageCell.m */; };
 		ED71923422E999AA00B1A74E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED71923322E999AA00B1A74E /* AppDelegate.m */; };
 		ED71923C22E999AC00B1A74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED71923B22E999AC00B1A74E /* Assets.xcassets */; };
 		ED71923F22E999AC00B1A74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED71923D22E999AC00B1A74E /* LaunchScreen.storyboard */; };
@@ -52,8 +55,10 @@
 		EDA1CAD223053B42003C47BB /* GHWTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD123053B42003C47BB /* GHWTapGestureRecognizer.m */; };
 		EDA1CAD523066BE1003C47BB /* GHWEventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA1CAD423066BE1003C47BB /* GHWEventButton.m */; };
 		EDA1CAD723067BDB003C47BB /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EDA1CAD623067BDB003C47BB /* Readme.md */; };
+		EDBB8A16232F2CB0000FA0D4 /* GHWTest0View.m in Sources */ = {isa = PBXBuildFile; fileRef = EDBB8A15232F2CB0000FA0D4 /* GHWTest0View.m */; };
 		EDCAC34A2310D6BB007F9FA8 /* GHWLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */; };
 		EDCAC34D231101E2007F9FA8 /* GHWLLDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC34C231101E2007F9FA8 /* GHWLLDBObject.m */; };
+		EDD050BE232E36D800A260AB /* GHWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD050BD232E36D700A260AB /* GHWTestViewController.m */; };
 		EDD5447223029EF400092443 /* GHWModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447123029EF400092443 /* GHWModuleA.m */; };
 		EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544782303ECFB00092443 /* GHWAttributeViewController.m */; };
 		EDD5447C2303EE3700092443 /* GHWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447B2303EE3700092443 /* GHWBaseViewController.m */; };
@@ -65,8 +70,6 @@
 		92ECD34EE334B91F6AB5469A /* Pods_MyDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0530AB7F161664F95F55C2 /* Pods-MyDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.debug.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		D12A5835269FCDF23020B4A1 /* Pods-MyDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.release.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.release.xcconfig"; sourceTree = "<group>"; };
-		ED21AB7F231C02AE0091CA80 /* GHWExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWExtensionViewController.h; sourceTree = "<group>"; };
-		ED21AB80231C02AE0091CA80 /* GHWExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWExtensionViewController.m; sourceTree = "<group>"; };
 		ED2A12B52316358B0014826F /* GHWTimeProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWTimeProfileDetailViewController.m; sourceTree = "<group>"; };
 		ED2A12B62316358B0014826F /* GHWTimeProfileFlowImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTimeProfileFlowImageCell.h; sourceTree = "<group>"; };
 		ED2A12B82316358B0014826F /* image_6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpeg; sourceTree = "<group>"; };
@@ -100,6 +103,14 @@
 		ED33BB5E230BF3DA00C91DEC /* GHWBitToSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWBitToSourceViewController.m; sourceTree = "<group>"; };
 		ED43F9682308F4D90044DA50 /* UIDevice+GHW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+GHW.m"; sourceTree = "<group>"; };
 		ED43F9692308F4DA0044DA50 /* UIDevice+GHW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+GHW.h"; sourceTree = "<group>"; };
+		ED44A95E23325EF100656F18 /* GHWAllocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWAllocationViewController.h; sourceTree = "<group>"; };
+		ED44A95F23325EF100656F18 /* GHWAllocationImageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWAllocationImageLayout.h; sourceTree = "<group>"; };
+		ED44A96023325EF100656F18 /* GHWAllocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWAllocationViewController.m; sourceTree = "<group>"; };
+		ED44A96123325EF100656F18 /* GHWAllocationImageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWAllocationImageLayout.m; sourceTree = "<group>"; };
+		ED44A96223325EF100656F18 /* GHWAllocationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWAllocationDetailViewController.m; sourceTree = "<group>"; };
+		ED44A96323325EF100656F18 /* GHWAllocationFlowImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWAllocationFlowImageCell.h; sourceTree = "<group>"; };
+		ED44A96423325EF100656F18 /* GHWAllocationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWAllocationDetailViewController.h; sourceTree = "<group>"; };
+		ED44A96523325EF100656F18 /* GHWAllocationFlowImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWAllocationFlowImageCell.m; sourceTree = "<group>"; };
 		ED71922F22E999AA00B1A74E /* MyDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED71923222E999AA00B1A74E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED71923322E999AA00B1A74E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,10 +140,14 @@
 		EDA1CAD323066BE1003C47BB /* GHWEventButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWEventButton.h; sourceTree = "<group>"; };
 		EDA1CAD423066BE1003C47BB /* GHWEventButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWEventButton.m; sourceTree = "<group>"; };
 		EDA1CAD623067BDB003C47BB /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		EDBB8A14232F2CB0000FA0D4 /* GHWTest0View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWTest0View.h; sourceTree = "<group>"; };
+		EDBB8A15232F2CB0000FA0D4 /* GHWTest0View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWTest0View.m; sourceTree = "<group>"; };
 		EDCAC3482310D6BB007F9FA8 /* GHWLLDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWLLDBViewController.h; sourceTree = "<group>"; };
 		EDCAC3492310D6BB007F9FA8 /* GHWLLDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWLLDBViewController.m; sourceTree = "<group>"; };
 		EDCAC34B231101E2007F9FA8 /* GHWLLDBObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWLLDBObject.h; sourceTree = "<group>"; };
 		EDCAC34C231101E2007F9FA8 /* GHWLLDBObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWLLDBObject.m; sourceTree = "<group>"; };
+		EDD050BC232E36D700A260AB /* GHWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTestViewController.h; sourceTree = "<group>"; };
+		EDD050BD232E36D700A260AB /* GHWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWTestViewController.m; sourceTree = "<group>"; };
 		EDD5447023029EF400092443 /* GHWModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWModuleA.h; sourceTree = "<group>"; };
 		EDD5447123029EF400092443 /* GHWModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWModuleA.m; sourceTree = "<group>"; };
 		EDD544772303ECFB00092443 /* GHWAttributeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWAttributeViewController.h; sourceTree = "<group>"; };
@@ -227,11 +242,28 @@
 			path = bitToSource;
 			sourceTree = "<group>";
 		};
+		ED44A95823325DB600656F18 /* Allocation */ = {
+			isa = PBXGroup;
+			children = (
+				ED44A96423325EF100656F18 /* GHWAllocationDetailViewController.h */,
+				ED44A96223325EF100656F18 /* GHWAllocationDetailViewController.m */,
+				ED44A96323325EF100656F18 /* GHWAllocationFlowImageCell.h */,
+				ED44A96523325EF100656F18 /* GHWAllocationFlowImageCell.m */,
+				ED44A95F23325EF100656F18 /* GHWAllocationImageLayout.h */,
+				ED44A96123325EF100656F18 /* GHWAllocationImageLayout.m */,
+				ED44A95E23325EF100656F18 /* GHWAllocationViewController.h */,
+				ED44A96023325EF100656F18 /* GHWAllocationViewController.m */,
+			);
+			path = Allocation;
+			sourceTree = "<group>";
+		};
 		ED64282923176CF900B37880 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ED21AB7F231C02AE0091CA80 /* GHWExtensionViewController.h */,
-				ED21AB80231C02AE0091CA80 /* GHWExtensionViewController.m */,
+				EDD050BC232E36D700A260AB /* GHWTestViewController.h */,
+				EDD050BD232E36D700A260AB /* GHWTestViewController.m */,
+				EDBB8A14232F2CB0000FA0D4 /* GHWTest0View.h */,
+				EDBB8A15232F2CB0000FA0D4 /* GHWTest0View.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -257,6 +289,7 @@
 		ED71923122E999AA00B1A74E /* MyDemos */ = {
 			isa = PBXGroup;
 			children = (
+				ED44A95823325DB600656F18 /* Allocation */,
 				ED64282923176CF900B37880 /* Extension */,
 				ED2A12B42316358B0014826F /* TimeProfile */,
 				EDCAC3472310D5A1007F9FA8 /* lldb */,
@@ -482,17 +515,21 @@
 				EDCAC34D231101E2007F9FA8 /* GHWLLDBObject.m in Sources */,
 				EDD5447223029EF400092443 /* GHWModuleA.m in Sources */,
 				EDA1CAC323052F25003C47BB /* GHWEventAView.m in Sources */,
+				ED44A96623325EF100656F18 /* GHWAllocationViewController.m in Sources */,
 				EDCAC34A2310D6BB007F9FA8 /* GHWLLDBViewController.m in Sources */,
 				ED2A12D22316358B0014826F /* GHWTimeProfileDetailViewController.m in Sources */,
 				EDD544822303F75F00092443 /* GHWAttributeBaseObject.m in Sources */,
+				EDBB8A16232F2CB0000FA0D4 /* GHWTest0View.m in Sources */,
 				EDD544792303ECFB00092443 /* GHWAttributeViewController.m in Sources */,
+				EDD050BE232E36D800A260AB /* GHWTestViewController.m in Sources */,
 				ED71924A22E9A05E00B1A74E /* GHWHomeViewController.m in Sources */,
 				EDA1CAD223053B42003C47BB /* GHWTapGestureRecognizer.m in Sources */,
 				EDA1CAC023052EE9003C47BB /* GHWTouchViewController.m in Sources */,
 				ED33BB5F230BF3DA00C91DEC /* GHWBitToSourceViewController.m in Sources */,
 				EDD5447F2303F14900092443 /* GHWAttributeTestObject.m in Sources */,
-				ED21AB81231C02AE0091CA80 /* GHWExtensionViewController.m in Sources */,
+				ED44A96823325EF100656F18 /* GHWAllocationDetailViewController.m in Sources */,
 				ED43F96A2308F4DA0044DA50 /* UIDevice+GHW.m in Sources */,
+				ED44A96723325EF100656F18 /* GHWAllocationImageLayout.m in Sources */,
 				EDA1CACF23052F72003C47BB /* GHWEventEView.m in Sources */,
 				ED71924222E999AC00B1A74E /* main.m in Sources */,
 				EDD5447C2303EE3700092443 /* GHWBaseViewController.m in Sources */,
@@ -501,6 +538,7 @@
 				EDA1CAC923052F4B003C47BB /* GHWEventCView.m in Sources */,
 				EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */,
 				EDA1CACC23052F5B003C47BB /* GHWEventDView.m in Sources */,
+				ED44A96923325EF100656F18 /* GHWAllocationFlowImageCell.m in Sources */,
 				ED2A12E82316358B0014826F /* GHWTimeProfileMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

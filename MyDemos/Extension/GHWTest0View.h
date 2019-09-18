@@ -1,8 +1,8 @@
 //
-//  GHWExtensionViewController.h
+//  GHWTest0View.h
 //  MyDemos
 //
-//  Created by 黑化肥发灰 on 2019/9/1.
+//  Created by 郭宏伟 on 2019/9/16.
 //  Copyright © 2019 Jingyao. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GHWExtensionViewController : UIViewController
+@interface GHWTest0View : UIView
 
 @end
 
