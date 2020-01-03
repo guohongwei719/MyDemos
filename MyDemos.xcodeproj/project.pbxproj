@@ -65,6 +65,7 @@
 		EDD5447F2303F14900092443 /* GHWAttributeTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447E2303F14900092443 /* GHWAttributeTestObject.m */; };
 		EDD544822303F75F00092443 /* GHWAttributeBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544812303F75F00092443 /* GHWAttributeBaseObject.m */; };
 		EDF603F623BEE56700C8E73D /* GHWBaiduAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF603F523BEE56700C8E73D /* GHWBaiduAdViewController.m */; };
+		EDF6043923BF1BDE00C8E73D /* BaiduMobAdBlankView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF6043823BF1BDE00C8E73D /* BaiduMobAdBlankView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +162,8 @@
 		EDD544812303F75F00092443 /* GHWAttributeBaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWAttributeBaseObject.m; sourceTree = "<group>"; };
 		EDF603F423BEE56700C8E73D /* GHWBaiduAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWBaiduAdViewController.h; sourceTree = "<group>"; };
 		EDF603F523BEE56700C8E73D /* GHWBaiduAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWBaiduAdViewController.m; sourceTree = "<group>"; };
+		EDF6043723BF1BDD00C8E73D /* BaiduMobAdBlankView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdBlankView.h; sourceTree = "<group>"; };
+		EDF6043823BF1BDE00C8E73D /* BaiduMobAdBlankView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMobAdBlankView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +383,8 @@
 		EDF603F323BEE52400C8E73D /* BaiduAd */ = {
 			isa = PBXGroup;
 			children = (
+				EDF6043723BF1BDD00C8E73D /* BaiduMobAdBlankView.h */,
+				EDF6043823BF1BDE00C8E73D /* BaiduMobAdBlankView.m */,
 				EDF603F423BEE56700C8E73D /* GHWBaiduAdViewController.h */,
 				EDF603F523BEE56700C8E73D /* GHWBaiduAdViewController.m */,
 			);
@@ -398,6 +403,7 @@
 				ED71922C22E999AA00B1A74E /* Frameworks */,
 				ED71922D22E999AA00B1A74E /* Resources */,
 				6D40A4D75F9EC6944096234F /* [CP] Embed Pods Frameworks */,
+				7107522265CDDD3C756E08FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -492,6 +498,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7107522265CDDD3C756E08FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDemos/Pods-MyDemos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D8F2408C5B1167B9CD7546B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -552,6 +575,7 @@
 				EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */,
 				EDF603F623BEE56700C8E73D /* GHWBaiduAdViewController.m in Sources */,
 				EDA1CACC23052F5B003C47BB /* GHWEventDView.m in Sources */,
+				EDF6043923BF1BDE00C8E73D /* BaiduMobAdBlankView.m in Sources */,
 				ED44A96923325EF100656F18 /* GHWAllocationFlowImageCell.m in Sources */,
 				ED2A12E82316358B0014826F /* GHWTimeProfileMainViewController.m in Sources */,
 			);

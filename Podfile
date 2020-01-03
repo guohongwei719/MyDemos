@@ -13,5 +13,5 @@ use_frameworks!
  pod 'GHWPodDemo', :path => 'localPods/GHWPodDemo/'
  pod 'GHWAttributeLib', :path => 'localPods/GHWAttributeLib/'
  pod 'BinaryToSource', :path => 'localPods/BinaryToSource/'
-
+ pod 'BaiduAd', :path => 'localPods/BaiduAd/'
 end

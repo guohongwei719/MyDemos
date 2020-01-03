@@ -1,4 +1,5 @@
 PODS:
+  - BaiduAd (0.1.0)
   - BinaryToSource (0.1.0)
   - GHWAttributeLib (0.1.0):
     - GHWPodDemo
@@ -6,6 +7,7 @@ PODS:
   - Masonry (1.1.0)
 
 DEPENDENCIES:
+  - BaiduAd (from `localPods/BaiduAd/`)
   - BinaryToSource (from `localPods/BinaryToSource/`)
   - GHWAttributeLib (from `localPods/GHWAttributeLib/`)
   - GHWPodDemo (from `localPods/GHWPodDemo/`)
@@ -16,6 +18,8 @@ SPEC REPOS:
     - Masonry
 
 EXTERNAL SOURCES:
+  BaiduAd:
+    :path: localPods/BaiduAd/
   BinaryToSource:
     :path: localPods/BinaryToSource/
   GHWAttributeLib:
@@ -24,11 +28,12 @@ EXTERNAL SOURCES:
     :path: localPods/GHWPodDemo/
 
 SPEC CHECKSUMS:
+  BaiduAd: 8c0416b8e519f0e9430a0928490a51c20d8800c3
   BinaryToSource: 5c826a8df599c35001041f3788f0708f6c938609
   GHWAttributeLib: 8fc80eecdca9e22dfd64553926db0f0c32fc2197
   GHWPodDemo: d46d130785122ffb5fa38c783eb2b1f68dd3768a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 8cbf091322cf210f70a3bcb25f52e129d43548ec
+PODFILE CHECKSUM: a98065187576b99e109c77b18febea2ae435c888
 
 COCOAPODS: 1.7.2

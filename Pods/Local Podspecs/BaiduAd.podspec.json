@@ -1,0 +1,39 @@
+{
+  "name": "BaiduAd",
+  "version": "0.1.0",
+  "summary": "Baidu Ad",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/guohongwei719/BinaryToSource",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "guohongwei719": "guohongwei04441@hellobike.com"
+  },
+  "source": {
+    "git": "https://github.com/guohongwei719/BinaryToSource.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "vendored_frameworks": "Products/*.framework",
+  "resources": "assets/*.bundle",
+  "frameworks": [
+    "StoreKit",
+    "SafariServices",
+    "MessageUI",
+    "CoreMedia",
+    "CoreMotion",
+    "SystemConfiguration",
+    "CoreLocation",
+    "CoreTelephony",
+    "AVFoundation",
+    "AdSupport"
+  ],
+  "libraries": "c++",
+  "pod_target_xcconfig": {
+    "OTHER_LDFLAGS": "-lObjC"
+  }
+}
