@@ -64,6 +64,7 @@
 		EDD5447C2303EE3700092443 /* GHWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447B2303EE3700092443 /* GHWBaseViewController.m */; };
 		EDD5447F2303F14900092443 /* GHWAttributeTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5447E2303F14900092443 /* GHWAttributeTestObject.m */; };
 		EDD544822303F75F00092443 /* GHWAttributeBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD544812303F75F00092443 /* GHWAttributeBaseObject.m */; };
+		EDF603F623BEE56700C8E73D /* GHWBaiduAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF603F523BEE56700C8E73D /* GHWBaiduAdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +159,8 @@
 		EDD5447E2303F14900092443 /* GHWAttributeTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWAttributeTestObject.m; sourceTree = "<group>"; };
 		EDD544802303F75F00092443 /* GHWAttributeBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWAttributeBaseObject.h; sourceTree = "<group>"; };
 		EDD544812303F75F00092443 /* GHWAttributeBaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWAttributeBaseObject.m; sourceTree = "<group>"; };
+		EDF603F423BEE56700C8E73D /* GHWBaiduAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHWBaiduAdViewController.h; sourceTree = "<group>"; };
+		EDF603F523BEE56700C8E73D /* GHWBaiduAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHWBaiduAdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +292,7 @@
 		ED71923122E999AA00B1A74E /* MyDemos */ = {
 			isa = PBXGroup;
 			children = (
+				EDF603F323BEE52400C8E73D /* BaiduAd */,
 				ED44A95823325DB600656F18 /* Allocation */,
 				ED64282923176CF900B37880 /* Extension */,
 				ED2A12B42316358B0014826F /* TimeProfile */,
@@ -371,6 +375,15 @@
 				EDD544812303F75F00092443 /* GHWAttributeBaseObject.m */,
 			);
 			path = launchManager;
+			sourceTree = "<group>";
+		};
+		EDF603F323BEE52400C8E73D /* BaiduAd */ = {
+			isa = PBXGroup;
+			children = (
+				EDF603F423BEE56700C8E73D /* GHWBaiduAdViewController.h */,
+				EDF603F523BEE56700C8E73D /* GHWBaiduAdViewController.m */,
+			);
+			path = BaiduAd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -537,6 +550,7 @@
 				EDA1CAD523066BE1003C47BB /* GHWEventButton.m in Sources */,
 				EDA1CAC923052F4B003C47BB /* GHWEventCView.m in Sources */,
 				EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */,
+				EDF603F623BEE56700C8E73D /* GHWBaiduAdViewController.m in Sources */,
 				EDA1CACC23052F5B003C47BB /* GHWEventDView.m in Sources */,
 				ED44A96923325EF100656F18 /* GHWAllocationFlowImageCell.m in Sources */,
 				ED2A12E82316358B0014826F /* GHWTimeProfileMainViewController.m in Sources */,

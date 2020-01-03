@@ -19,6 +19,7 @@
 #import "GHWTimeProfileMainViewController.h"
 #import "GHWTestViewController.h"
 #import "GHWAllocationViewController.h"
+#import "GHWBaiduAdViewController.h"
 
 //当前控制器
 UIViewController *AutoGetRoSourceViewController() {
@@ -81,7 +82,8 @@ UINavigationController* AutoGetNavigationViewController(UIViewController *source
                        @{@"二进制源码映射": [GHWBitToSourceViewController class]},
                        @{@"LLDB": [GHWLLDBViewController class]},
                        @{@"Allocation 内存分配": [GHWAllocationViewController class]},
-                       @{@"Time Profile": [GHWTimeProfileMainViewController class]}];
+                       @{@"Time Profile": [GHWTimeProfileMainViewController class]},
+                       @{@"百度广告": [GHWBaiduAdViewController class]}];
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
 }
