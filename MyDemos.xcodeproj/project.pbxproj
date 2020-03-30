@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		86FC7CC86F5B22E7B66E304B /* Pods_MyDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92ECD34EE334B91F6AB5469A /* Pods_MyDemos.framework */; };
+		ED242C7A243210D600BF0ECE /* JYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED242C79243210D600BF0ECE /* JYTestViewController.m */; };
 		ED2A12D22316358B0014826F /* GHWTimeProfileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2A12B52316358B0014826F /* GHWTimeProfileDetailViewController.m */; };
 		ED2A12D32316358B0014826F /* image_6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12B82316358B0014826F /* image_6.jpeg */; };
 		ED2A12D42316358B0014826F /* image_13.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED2A12B92316358B0014826F /* image_13.jpeg */; };
@@ -72,6 +73,8 @@
 		92ECD34EE334B91F6AB5469A /* Pods_MyDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0530AB7F161664F95F55C2 /* Pods-MyDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.debug.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.debug.xcconfig"; sourceTree = "<group>"; };
 		D12A5835269FCDF23020B4A1 /* Pods-MyDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDemos.release.xcconfig"; path = "Target Support Files/Pods-MyDemos/Pods-MyDemos.release.xcconfig"; sourceTree = "<group>"; };
+		ED242C78243210D600BF0ECE /* JYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYTestViewController.h; sourceTree = "<group>"; };
+		ED242C79243210D600BF0ECE /* JYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYTestViewController.m; sourceTree = "<group>"; };
 		ED2A12B52316358B0014826F /* GHWTimeProfileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWTimeProfileDetailViewController.m; sourceTree = "<group>"; };
 		ED2A12B62316358B0014826F /* GHWTimeProfileFlowImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWTimeProfileFlowImageCell.h; sourceTree = "<group>"; };
 		ED2A12B82316358B0014826F /* image_6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpeg; sourceTree = "<group>"; };
@@ -195,6 +198,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED242C77243210B100BF0ECE /* 面试题 */ = {
+			isa = PBXGroup;
+			children = (
+				ED242C78243210D600BF0ECE /* JYTestViewController.h */,
+				ED242C79243210D600BF0ECE /* JYTestViewController.m */,
+			);
+			path = "面试题";
+			sourceTree = "<group>";
+		};
 		ED2A12B42316358B0014826F /* TimeProfile */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +307,7 @@
 		ED71923122E999AA00B1A74E /* MyDemos */ = {
 			isa = PBXGroup;
 			children = (
+				ED242C77243210B100BF0ECE /* 面试题 */,
 				EDF603F323BEE52400C8E73D /* BaiduAd */,
 				ED44A95823325DB600656F18 /* Allocation */,
 				ED64282923176CF900B37880 /* Extension */,
@@ -575,6 +588,7 @@
 				EDA1CAC623052F3F003C47BB /* GHWEventBView.m in Sources */,
 				EDF603F623BEE56700C8E73D /* GHWBaiduAdViewController.m in Sources */,
 				EDA1CACC23052F5B003C47BB /* GHWEventDView.m in Sources */,
+				ED242C7A243210D600BF0ECE /* JYTestViewController.m in Sources */,
 				EDF6043923BF1BDE00C8E73D /* BaiduMobAdBlankView.m in Sources */,
 				ED44A96923325EF100656F18 /* GHWAllocationFlowImageCell.m in Sources */,
 				ED2A12E82316358B0014826F /* GHWTimeProfileMainViewController.m in Sources */,

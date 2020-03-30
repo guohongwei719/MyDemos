@@ -20,6 +20,7 @@
 #import "GHWTestViewController.h"
 #import "GHWAllocationViewController.h"
 #import "GHWBaiduAdViewController.h"
+#import "JYTestViewController.h"
 
 //当前控制器
 UIViewController *AutoGetRoSourceViewController() {
@@ -76,7 +77,9 @@ UINavigationController* AutoGetNavigationViewController(UIViewController *source
 }
 
 - (void)configData {
-    self.dataArray = @[@{@"插件": [GHWTestViewController class]},
+    self.dataArray = @[
+  @{@"测试一些问题": [JYTestViewController class]},
+  @{@"插件": [GHWTestViewController class]},
                        @{@"启动项管理__attribute__": [GHWAttributeViewController class]},
                        @{@"响应事件机制": [GHWTouchViewController class]},
                        @{@"二进制源码映射": [GHWBitToSourceViewController class]},
